@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/styleverda.css">
-    <link rel="stylesheet" href="javascript/script.js">
 </head>
 
 <body>
@@ -16,18 +15,47 @@
         </h1>
     </header>
     <main>
-        <section class="form">
-            <form action="#" method="get">
-                <p>
-                    <label for="setor">Quantas horas por dia você passa usando seu celuar, computador ou outros dispositivos com tela?:</label>
-                    <select id="setor" name="setor">
-                        <option value="1">Vendas</option>
-                        <option value="2">Financeiro</option>
-                        <option value="3">Administrativo</option>
-                    </select>
-                </p>
+        <form action="#" method="get">
+            <fieldset>
+                <legend>
+                    Quantas horas você passa na internet?
+                </legend>
+                <label><input type="radio" class="setor" value="1" name="horas"> 1-2 horas</label><br>
+                <label><input type="radio" class="setor" value="2" required name="horas"> 2-4 horas</label><br>
+                <label><input type="radio" class="setor" value="3" required name="horas"> 4-6 horas</label><br>
+                <label><input type="radio" class="setor" value="4" required name="horas"> 6-8 horas ou mais</label><br>
+            </fieldset>
+
+            <div id="resultado"></div>
         </form>
-        </section>
+        <script>
+            /* Elias code */
+            let setores = document.getElementsByClassName("setor");
+
+            for (let i = 0; i < setores.length; i++) {
+                setores[i].addEventListener("change", function () {
+                    let mensagem = document.getElementById("resultado");
+                    mensagem.innerText = "Você selecionou: " + setores[i].value;
+                    alert(setores[i].value);
+
+                    if (setores[i].value == "1") {
+                        alert("você usa o celular de maneira saudavel.");
+                    }
+                    else if (setores[i].value == "2") {
+                        alert("Você usa o celular de uma maneira mediana")
+                        
+                    }
+                    else if (setores[i].value == "3") {
+                        alert("Você usa o celular de uma maneira ruim")
+                        
+                    }
+                    else {
+                        alert(`Você é um viciado`)
+                    }
+                });
+            }
+            
+        </script>
     </main>
 </body>
 
