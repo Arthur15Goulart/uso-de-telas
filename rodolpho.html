@@ -16,6 +16,10 @@
         <button class="tempoTela">
             Voce passa muito tempo no celular
         </button>
+        <button>
+            <a href="homepage.html">HOME</button>
+            </a>
+        </button>
     </header>
     <main>
         <form action="#" method="get">
@@ -29,7 +33,6 @@
                 <label><input type="radio" class="setor" value="4" required name="horas"> 6-8 horas ou mais</label><br>
             </fieldset>
 
-            <div id="resultado">cfghdghdg</div>
         </form>
         <script>
             /* Elias code */
@@ -37,15 +40,12 @@
 
             for (let i = 0; i < setores.length; i++) {
                 setores[i].addEventListener("change", function () {
-                    let mensagem = document.getElementById("resultado");
-                    mensagem.innerText = "Você selecionou: " + setores[i].value;
-                    alert(setores[i].value);
 
                     if (setores[i].value == "1") {
                         alert("você usa o celular de maneira saudavel.");
                     }
                     else if (setores[i].value == "2") {
-                        alert("Você usa o celular de uma maneira ")
+                        alert("Você usa o celular de uma maneira normal ")
                         
                     }
                     else if (setores[i].value == "3") {
@@ -57,25 +57,25 @@
                     }
                 });
             }
-            function name() {
             let me = document.getElementsByClassName("tempoTela") [0]
+            function name() {
                 me.addEventListener ("click", function () {
                 alert (`Minha ideia deu certo`) 
             }     
                 )
         }
+        name ()
         </script>
         <fieldset>
             <legend>
-              Quais são as atividades que mais consumem seu tempo em dispostivios?
+                Quais são as atividades que mais consomem seu tempo em dispostivos?
             </legend>
-            <label><input type="radio" class="tempo" value="1" name="tempo"> Estudo</label><br>
-            <label><input type="radio" class="tempo" value="2" required name="tempo">Trabalho </label><br>
-            <label><input type="radio" class="tempo" value="3" required name="tempo"> Leitura de Notícias e Artigos</label><br>
-            <label><input type="radio" class="tempo" value="4" required name="tempo"> Mensagens e Comunicação</label><br>
-            <label><input type="radio" class="tempo" value="5" required name="tempo"> Redes Sociais</label><br>
-            <label><input type="radio" class="tempo" value="6" required name="tempo"> Jogos</label><br>
-            <label><input type="radio" class="tempo" value="7" required name="tempo"> Entretenimento e Streaming</label><br>
+            <label><input type="radio" class="tempo" value="1" name="tempo"> Estudo e trabalho</label><br>
+            <label><input type="radio" class="tempo" value="2" required name="tempo"> Leitura de Notícias e Artigos</label><br>
+            <label><input type="radio" class="tempo" value="3" required name="tempo"> Mensagens e Comunicação</label><br>
+            <label><input type="radio" class="tempo" value="4" required name="tempo"> Redes Sociais</label><br>
+            <label><input type="radio" class="tempo" value="5" required name="tempo"> Jogos</label><br>
+            <label><input type="radio" class="tempo" value="6" required name="tempo"> Entretenimento e Streaming</label><br>
         </fieldset>
 
         <div id="result"></div>
@@ -85,12 +85,9 @@
 
 for (let u = 0; u < tempo.length; u++) {
     tempo[u].addEventListener("change", function () {
-        let message = document.getElementById("result");
-        message.innerText = "Você selecionou: " + tempo[u].value;
-        alert(tempo[u].value);
 
         if (tempo[u].value == "1") {
-            alert("você usa o celular de maneira saudavel.");
+            alert(".");
         }
         else if (tempo[u].value == "2") {
             alert("Você usa o celular de uma maneira ")
@@ -104,10 +101,7 @@ for (let u = 0; u < tempo.length; u++) {
             
         }else if (tempo[u].value == "5") {
             alert("Você passa mais tempo que o recomendado")
-            
-        }else if (tempo[u].value == "6") {
-            alert("Você passa mais tempo que o recomendado")
-            
+
         }
         else {
             alert("Você é um viciado")
@@ -118,5 +112,4 @@ for (let u = 0; u < tempo.length; u++) {
         </script>
     </main>
 </body>
-
 </html>
