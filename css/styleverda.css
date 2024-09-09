@@ -145,21 +145,19 @@ table {
 */
 a{
     text-decoration: none;
-    color: #2A306A
+    color: black
 }
 /*
 ////////////////////////////////////////////////////
                         TOPO
 ////////////////////////////////////////////////////
 */
-body button a.formulario {
-    color: black;
-}
+
 header nav.navegacao{
     display: flex;
     justify-content: space-between;
     margin: 2vw 3vw 3vw 2vw;
-    background-color: #E5E5E5;
+    background-color: #80CCD4;
     padding: 12px 12px 12px 12px;
 }
 header nav ul{
@@ -169,16 +167,13 @@ header nav ul li{
     padding: 0vw 1vw 0vw 1vw;
 }
 header ul li.formulario a{
-    color: #2A306A;
-    font-weight: bold;
+    color:black;
 }
-header nav ul li.perguntas a{
-    color: #2A306A;
-    font-weight: bold;
+header nav ul li.impactos-na-infancia a{
+    color: black;
 }
 header nav ul li.usotelas a{
     color: black;
-    font-weight: bold;
 }
 header nav a span{
     font-weight: bold;
@@ -192,5 +187,5 @@ main.home {
   margin: 0 0 0 32vw;
 }
 main.home img.pessoacelular{
-  border-radius: 20px;
+  
 }
