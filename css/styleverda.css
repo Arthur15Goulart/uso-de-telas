@@ -169,9 +169,6 @@ header nav ul li{
 header ul li.formulario a{
     color:black;
 }
-header nav ul li.impactos-na-infancia a{
-    color: black;
-}
 header nav ul li.usotelas a{
     color: black;
 }
@@ -184,8 +181,26 @@ header nav a span{
 ////////////////////////////////////////////////////
 */
 main.home {
-  margin: 0 0 0 32vw;
+  margin: 0 0 0 80vw;
 }
-main.home img.pessoacelular{
-  
+
+
+
+
+
+
+
+
+
+/*
+////////////////////////////////////////////////////
+                CONTEÚDO-BENEFÍCIOS
+////////////////////////////////////////////////////
+*/
+
+html {
+  margin: 0 0 0 8vw;
+}
+section.beneficios ol li{
+margin: ;
 }
