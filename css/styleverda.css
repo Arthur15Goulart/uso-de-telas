@@ -4,6 +4,7 @@
 ===========================================================
 */
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 /* 
 ==========================================================
@@ -102,6 +103,7 @@ video {
   font: inherit;
   vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
 article,
 aside,
@@ -116,17 +118,21 @@ nav,
 section {
   display: block;
 }
+
 body {
   line-height: 1;
 }
+
 ol,
 ul {
   list-style: none;
 }
+
 blockquote,
 q {
   quotes: none;
 }
+
 blockquote:before,
 blockquote:after,
 q:before,
@@ -134,59 +140,111 @@ q:after {
   content: "";
   content: none;
 }
+
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
 /*
 ////////////////////////////////////////////////////
                         GERAL
 ////////////////////////////////////////////////////
 */
-a{
-    text-decoration: none;
-    color: black
+html {
+  font-size: calc(10px + 0.390625vw);
 }
+
+
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: rgb(255, 255, 255);
+}
+a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
 /*
 ////////////////////////////////////////////////////
                         TOPO
 ////////////////////////////////////////////////////
 */
 
-header nav.navegacao{
-    display: flex;
-    justify-content: space-between;
-    margin: 2vw 3vw 3vw 2vw;
-    background-color: #80CCD4;
-    padding: 12px 12px 12px 12px;
+
+header nav.navegacao {
+  display: flex;
+  justify-content: space-between;
+  background-color: #80CCD4;
+  padding: 24px 12px 24px 12px;
+}cara-saindo-de-dentro-do-celular
+
+header nav ul li a{
+  color: #4444;
 }
-header nav ul{
-    display: flex;
+
+
+header nav ul li a span{
+  font-weight: bold;
 }
-header nav ul li{
-    padding: 0vw 1vw 0vw 1vw;
+
+
+header{
+  font-size: 0.95vw;
 }
-header ul li.formulario a{
-    color:black;
+
+header nav ul {
+  display: flex;
 }
-header nav ul li.usotelas a{
-    color: black;
+
+header nav ul li {
+  padding: 0 1vw 0 1vw;
 }
-header nav a span{
-    font-weight: bold;
-}
+
+
+
+
+
 /*
 ////////////////////////////////////////////////////
                 CONTEÚDO-HOMEPAGE
 ////////////////////////////////////////////////////
 */
-main.home {
-  margin: 0 0 0 80vw;
+main.home{
+  section.bannerhome{
+    h1{
+      border-bottom: 1px solid#000000;
+      margin: 2.5vw 0 2vw;
+      text-align: center;
+      font-size: 3rem;
+      font-weight: bold;
+      span{
+      color: #FF7E7E;
+      }
+    }
+    p{
+      text-align: center;
+      font-size: 1.5rem;
+    }
+  }
+  section.maleficio{
+    
+    div.topicos{
+      h2{
+        text-align: center;
+        font-weight: bold;
+        font-size: 2.5rem;
+      }
+        ul{
+      li{
+        display: flex;
+      }
+    }
+  }
 }
-
-
-
-
+  
+}
 
 
 
@@ -198,9 +256,223 @@ main.home {
 ////////////////////////////////////////////////////
 */
 
-html {
-  margin: 0 0 0 8vw;
+main.bene {
+  margin: 0 6vw 0 6vw;
 }
-section.beneficios ol li{
-margin: 0 0 0 0;
+
+main.bene section.beneficios {
+  margin: 4vw 5vw 4vw 5vw ;
+  background-color: #80CAE8;
+	border-radius: 6vw;
+	padding: 10px 7px 10px 7px;
+}
+main.bene section.beneficios {
+  display: flex;
+}
+
+main.bene section.beneficios div.texto1 {
+  margin: 9vw 3vw 0 2vw ;
+  font-size: 1.2vw;
+}
+main.bene h1 {
+  margin: 0 2vw 0 2vw;
+  font-size: 2vw;
+  font-weight: bold;
+  border-bottom: 1px solid #000000;
+}
+main.bene h2 {
+  font-size: 1.8vw;
+  font-weight: bold;
+  margin: 0 33vw 0 33vw;
+}
+main.bene p {
+  margin: 2vw 2vw 2vw 2vw;
+}
+main.bene h1 span {
+  color: #0072C4;
+}
+
+/*|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+                    CONTEÚDO-TESTE
+|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
+
+
+section.teste{
+  text-align: center;
+}
+
+section.teste div h4{
+  font-size: 1.45rem;
+  text-align: center;
+}
+
+
+section.teste div h4 span{
+  color: #62B8F6;
+  font-weight: bold;
+}
+
+section.teste div p{
+  color: black;
+  text-align: center;
+  margin: 0.8vw 0 0.5vw 0;
+}
+
+section.teste div a{
+  background-color: #80CCD4;
+  color: white;
+  font-size: 17px;
+  margin: 30px 0 60px 0;
+  padding: 30px 70px 30px 70px;
+  border: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 520;
+  display: inline-block;
+}
+
+/*|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+                    CONTEÚDO - DESENVOLVEDORES
+|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
+
+footer h1 {
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: 600;
+}
+
+footer ul{
+  margin: 1vw 80px 0 15vw;
+}
+
+footer ul li{
+  block-size: 100px;
+  display: inline-block;
+  margin: 2vw 3vw 0 0;
+  border: 1px solid #D9D9D9;
+  border-radius: 10px;
+  padding: 10px 7vw 0 10px;
+}
+
+
+/*|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+                  PAGINA BETS E APOSTAS---ELIAS
+|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
+
+
+main.bet section.vicio{
+  display: flex;
+}
+
+main.bet section.vicio h1{
+  font-size:400%;
+  font-weight:bold;
+  margin: 8vw 0 0 9vw;
+}
+
+main.bet section.vicio h1 b {
+  color: rgb(243, 68, 68);
+  border-bottom: 1px solid #c7c3c3;
+}
+
+main.bet section.vicio div.img{
+  margin: 5vw 0 0 15vw;
+  
+}
+
+main.bet section.vicio p.p1{
+  font-size: 200%;
+  font-weight:bolder;
+  margin: 8vw 0 0 9vw;
+  
+}
+
+main.bet section.vicio p.p2{
+  border-bottom: 1px solid #c7c3c3;
+  margin: 1vw 0 2vw 4vw;
+}
+
+main.bet section.vicio ul{
+  margin: 2vw 0 3vw 9vw;
+}
+
+main.bet section.saude{
+  display: flex;
+  border-radius:1vw;
+  background-color: #D2E4F5;
+  padding: 10px 7px 10px 7px;
+  margin: 
+}
+
+main.bet section.saude h1{
+  font-size: 300%;
+  font-weight: bold;
+  margin: 2vw 0 3vw 6vw;
+}
+main.bet section.saude p{
+  margin: 2vw 0 0vw 6vw;
+  color: #ED6868;
+  font-size:185%;
+  font-weight: bold;
+}
+main.bet section.saude ul{
+  margin: 2vw 0 3vw 6vw;
+}
+main.bet section.saude img{
+  margin: 3vw 0 0 24vw;
+}
+main.bet 
+
+
+
+
+/*|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+                    ESTUDAR-COM-TELAS
+|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
+section.banner-estudo {
+  display: flex;
+}
+section.banner-estudo div.title h1{
+  font-weight: bold;
+  font-size: 2rem;
+  margin: 6vw 15vw 0;
+  border-bottom: 2px solid #c7c3c3;
+}
+main.estudartelas section.banner-estudo h1 span.tecnologia{
+  color: #3895F9;
+  margin: 0 6vw;
+}
+main.estudartelas section.banner-estudo div.title p.p {
+  margin: 1vw 14vw;
+  font-size: 1.2rem;
+}
+ main.estudartelas section.banner-estudo div.imagem-menino img{
+ margin: 4vw;
+}
+main.estudartelas section.estudo-parte2{
+ display: flex;
+}
+main.estudartelas section.estudo-parte2 div.esquerda h2{
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-size: 1.9rem;
+  margin: 0 14vw;
+}
+main.estudartelas section.estudo-parte2 div.esquerda img{
+  margin: 1vw 11vw;
+}
+main.estudartelas section.estudo-parte2 div.topicos{
+    font-size: 1.4rem;
+
+font-weight: bold;main.estudartelas section.estudo-parte2 div.topicos h3{
+maid;iai}
+n.estudartelas section.estudo-parte2 div.topicnnumerumo{numer
+  color: gray;   
+}
+main.estudartelas section.estudo-parte2 div.topicos span.negrito{
+   font-weight: bold;
+} 
+main.estudartelas section.estudo-parte2 
+div.topicos ul li{
+ solid gray;
+  font-weight: bold;
 }
