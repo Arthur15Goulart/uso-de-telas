@@ -214,13 +214,13 @@ header nav ul li {
 main.home{
   section.bannerhome{
     h1{
-      border-bottom: 1px solid#000000;
       margin: 2.5vw 0 2vw;
       text-align: center;
       font-size: 3rem;
       font-weight: bold;
       span{
       color: #FF7E7E;
+      border-bottom: 1px solid#000000;
       }
     }
     p{
@@ -231,14 +231,29 @@ main.home{
   section.maleficio{
     
     div.topicos{
+      li.fundo{
+        font-size: 2rem;
+        background-color: #80CAE8;
+      }
       h2{
         text-align: center;
         font-weight: bold;
         font-size: 2.5rem;
+        margin: 4vw 0 4vw 0;
       }
         ul{
       li{
         display: flex;
+        h3{
+          font-size: 2rem;
+          font-weight: bold;
+          text-align: center;
+          padding: 3vw 0 3vw 0;
+        }
+        p{
+          text-align: center;
+          font-size: 1.3rem;
+        }
       }
     }
   }
@@ -299,6 +314,7 @@ main.bene h1 span {
 
 section.teste{
   text-align: center;
+  margin: 4vw 0 2vw 0;
 }
 
 section.teste div h4{
