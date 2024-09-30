@@ -1,128 +1,103 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário</title>
     <link rel="stylesheet" href="css/styleverda.css">
 </head>
-
 <body>
     <header>
-            <nav class="navegacao">
-                <a href="#">Uso de <span>telas</span></a>
-                <ul>
-                    <li class="inicio">
-                        <a href="index.html">INÍCIO</a>
-                    </li>
-                    <li class="formulario" class="atual">
-                        <a href="formulario.html"><span>FORMULÁRIO</span></a>
-                    </li>
-                    <li class="apostas-digitais">
-                        <a href="bet.html">APOSTAS DIGITAIS</a>
-                    </li>
-                    <li>
-                        <a href="estudar-com-telas.html">ESTUDAR COM AS TELAS</a>
-                    </li>
-                    <li>
-                        <a href="beneficios.html">BENEFÍCIOS</a>
-                    </li>
-                </ul>
-            </nav>
+        <nav class="navegacao">
+            <a href="#">Uso de <span>telas</span></a>
+            <ul>
+                <li class="inicio">
+                    <a href="index.html">INÍCIO</a>
+                </li>
+                <li class="formulario">
+                    <a href="formulario.html">FORMULÁRIO</a>
+                </li>
+                <li class="apostas-digitais">
+                    <a href="bet.html">APOSTAS DIGITAIS</a>
+                </li>
+                <li class="atual">
+                    <a href="estudar-com-telas.html"><span>ESTUDAR COM AS TELAS</span></a>
+                </li>
+                <li>
+                    <a href="beneficios.html">BENEFÍCIOS</a>
+                </li>
+            </ul>
+        </nav>
     </header>
-    <main>
-        <form action="#" method="get">
-            <button>
-                <a href="index.html"> HOME </a>
-            </button>
-            <fieldset>
-                <legend>
-                    Quantas horas você passa na internet?
-                </legend>
-                <label><input type="radio" class="setor" value="1" name="horas"> 1-2 horas</label><br>
-                <label><input type="radio" class="setor" value="2" required name="horas"> 2-4 horas</label><br>
-                <label><input type="radio" class="setor" value="3" required name="horas"> 4-6 horas</label><br>
-                <label><input type="radio" class="setor" value="4" required name="horas"> 6-8 horas ou mais</label><br>
-            </fieldset>
-
-        </form>
-        <script>
-            /* Elias code */
-            let setores = document.getElementsByClassName("setor");
-
-            for (let i = 0; i < setores.length; i++) {
-                setores[i].addEventListener("change", function () {
-
-                    if (setores[i].value == "1") {
-                        alert("você usa o celular de maneira saudavel.");
-                    }
-                    else if (setores[i].value == "2") {
-                        alert("Você usa o celular de uma maneira normal ")
-                        
-                    }
-                    else if (setores[i].value == "3") {
-                        alert("Você passa mais tempo que o recomendado")
-                        
-                    }
-                    else {
-                        alert("Você é um viciado")
-                    }
-                });
-            }
-            let me = document.getElementsByClassName("tempoTela") [0]
-            function name() {
-                me.addEventListener ("click", function () {
-                alert (`Minha ideia deu certo`) 
-            }     
-                )
-        }
-        name ()
-        </script>
+<section>
+    <h1>Teste seu nível de dependência digital:</h1>
+    <form action="#" method="get">
         <fieldset>
-            <legend>
-                Quais são as atividades que mais consomem seu tempo em dispostivos?
-            </legend>
-            <label><input type="radio" class="tempo" value="1" name="tempo"> Estudo e trabalho</label><br>
-            <label><input type="radio" class="tempo" value="2" required name="tempo"> Leitura de Notícias e Artigos</label><br>
-            <label><input type="radio" class="tempo" value="3" required name="tempo"> Mensagens e Comunicação</label><br>
-            <label><input type="radio" class="tempo" value="4" required name="tempo"> Redes Sociais</label><br>
-            <label><input type="radio" class="tempo" value="5" required name="tempo"> Jogos</label><br>
-            <label><input type="radio" class="tempo" value="6" required name="tempo"> Entretenimento e Streaming</label><br>
+            <legend>Quantas horas (em média) você utiliza as telas?</legend>
+            <p><label>
+                <input type="radio" name="horas" value="0"> Menos de 2 horas.
+            </label></p>
+            <p><label>
+                <input type="radio" name="horas" value="1"> 2 a 4 horas.
+            </label></p>
+            <p><label>
+                <input type="radio" name="horas" value="2"> 4 a 6 horas.
+            </label></p>
+            <p><label>
+                <input type="radio" name="horas" value="3"> Mais de 6 horas.
+            </label></p>
         </fieldset>
+        <fieldset>
+            <legend>Você utiliza algum aplicativo de controle?</legend>
+            <p><label>
+                <input type="radio" name="controle" value="0">Sim
+            </label></p>
+            <p><label>
+                <input type="radio" name="controle" value="1">Não
+            </label></p>
+        </fieldset>
+     <p>
+        <input type="button" value="ENVIAR" onclick="finalizar()">
+    </p>
+    </form>
+    <div id="res">
 
-        <div id="result"></div>
+    </div>
+    <div id="res2">
 
-        <script>
-            let tempo = document.getElementsByClassName("tempo");
+    </div>
+</section>
+    <script>
+        function finalizar(){
+            const horas = document.querySelector('input[name="horas"]:checked');
+            const res = document.querySelector('div#res');
+        
+        if(horas){
+            const dependecia = horas.value;
+            if(dependecia === "0"){
+                res.innerHTML = `<h2> Baixa dependência.</h2>`;
+            } else if(dependecia === "1"){
+                res.innerHTML = `<h2>Moderada dependência.</h2>`;
+            } else if(dependecia === "2"){
+                res.innerHTML = `<h2> Alta dependência. </h2>`;
+            } else {
+                res.innerHTML = `<h2> Muito alta dependência. </h2>`;
+            }
+           } else{
+                res.innerHTML = `<h2> Por favor, selecione uma opção</h2>`;
+            }
+            const app = document.querySelector('input[name="controle"]:checked');
+            const res2 = document.querySelector('div#res2');
 
-for (let u = 0; u < tempo.length; u++) {
-    tempo[u].addEventListener("change", function () {
-
-        if (tempo[u].value == "1") {
-            alert(".");
+            if(app){
+                const controle = app.value;
+                if(controle === "0"){
+                    res2.innerHTML = `<p>Você utiliza o aplicativo:</p>`;
+                } else {
+                    res2.innerHTML = `<p>Use os seguintes aplicativos:</p> <ul><li> - Forest</li><li>- StayFocusd</li><li>- Freedom</li><li>- RescueTime</li></ul>`
+                }
+            }
         }
-        else if (tempo[u].value == "2") {
-            alert("Você usa o celular de uma maneira ")
-            
-        }
-        else if (tempo[u].value == "3") {
-            alert("Você passa mais tempo que o recomendado")
-            
-        }else if (tempo[u].value == "4") {
-            alert("Você passa mais tempo que o recomendado")
-            
-        }else if (tempo[u].value == "5") {
-            alert("Você passa mais tempo que o recomendado")
-
-        }
-        else {
-            alert("Você é um viciado")
-        }
-    });
-}
-    
-        </script>
-    </main>
+    </script>
 </body>
 </html>
