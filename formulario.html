@@ -15,13 +15,13 @@
                     <a href="index.html">INÍCIO</a>
                 </li>
                 <li class="formulario">
-                    <a href="formulario.html">FORMULÁRIO</a>
+                    <a href="formulario.html"><span>FORMULÁRIO</span></a>
                 </li>
                 <li class="apostas-digitais">
                     <a href="bet.html">APOSTAS DIGITAIS</a>
                 </li>
-                <li class="atual">
-                    <a href="estudar-com-telas.html"><span>ESTUDAR COM AS TELAS</span></a>
+                <li>
+                    <a href="estudar-com-telas.html">ESTUDAR COM AS TELAS</a>
                 </li>
                 <li>
                     <a href="beneficios.html">BENEFÍCIOS</a>
@@ -56,6 +56,24 @@
                 <input type="radio" name="controle" value="1">Não
             </label></p>
         </fieldset>
+        <fieldset>
+            <legend>Utilizar as telas atrapalham seu sono ou atividades diárias?</legend>
+            <p>
+                <label ><input type="radio" name="atrapalha" value="0">Sim</label>
+            </p>
+            <p>
+                <label ><input type="radio" name="atrapalha" value="1">Não</label>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Deseja ver a rotina indicada?</legend>
+            <p>
+                <label ><input type="radio" name="rotina" value="0">Sim</label>
+            </p>
+            <p>
+                <label ><input type="radio" name="rotina" value="1">Não</label>
+            </p>
+        </fieldset>
      <p>
         <input type="button" value="ENVIAR" onclick="finalizar()">
     </p>
@@ -64,6 +82,12 @@
 
     </div>
     <div id="res2">
+
+    </div>
+    <div id="res3">
+
+    </div>
+    <div id="res4">
 
     </div>
 </section>
@@ -92,11 +116,25 @@
             if(app){
                 const controle = app.value;
                 if(controle === "0"){
-                    res2.innerHTML = `<p>Você utiliza o aplicativo:</p>`;
-                } else {
+                    res2.innerHTML = `<p>Você já utiliza um aplicativo para controle</p>`;
+                } else if (controle === "1") {
                     res2.innerHTML = `<p>Use os seguintes aplicativos:</p> <ul><li> - Forest</li><li>- StayFocusd</li><li>- Freedom</li><li>- RescueTime</li></ul>`
+                } 
+            }
+            const atvds = document.querySelector('input[name="atrapalha"]:checked');
+            const res3 = document.querySelector('div#res3');
+
+            if(atvds){
+                const atrapalham = atvds.value
+                if(atrapalham === "0"){
+                    res3.innerHTML = `<p>Use os aplicativos de controle para delimitar um tempo de tela (2 a 3 horas é o recomendado)</p>
+                    <p>Para de usar os dispotivos no minímo 1 hora antes de ir deitar para dormir</p>`
+                } else {
+                    res3.innerHTML = `<p>Parabéns! Continue assim.</p>`
                 }
             }
+            const rotina = document.querySelector('input[name="rotina"]:checked');
+            const res4 = document.querySelector('div#res4');
         }
     </script>
 </body>

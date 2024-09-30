@@ -184,9 +184,13 @@ header nav ul li a{
   color: #4444;
 }
 
+header nav ul li a{
+  color: #444444;
+}
 
 header nav ul li a span{
   font-weight: bold;
+  color: black;
 }
 
 
@@ -211,6 +215,8 @@ header nav ul li {
                 CONTEÚDO-HOMEPAGE
 ////////////////////////////////////////////////////
 */
+
+
 main.home{
   section.bannerhome{
     h1{
@@ -231,12 +237,12 @@ main.home{
   section.maleficio{
     
     div.topicos{
+      text-align: center;
       li.fundo{
         font-size: 2rem;
         background-color: #80CAE8;
       }
       h2{
-        text-align: center;
         font-weight: bold;
         font-size: 2.5rem;
         margin: 4vw 0 4vw 0;
@@ -244,15 +250,22 @@ main.home{
         ul{
       li{
         display: flex;
+        padding: 0 0 2vw 4vw;
+        img{
+          text-align: left;
+          padding: 2vw 0 0 0;
+        }
         h3{
           font-size: 2rem;
           font-weight: bold;
-          text-align: center;
-          padding: 3vw 0 3vw 0;
+          margin: 3vw 0 3vw 0;
         }
         p{
-          text-align: center;
-          font-size: 1.3rem;
+          font-size: 1.2rem;
+          margin: 0 16vw 0 10vw;
+          span{
+            font-weight: bold;
+          }
         }
       }
     }
@@ -260,6 +273,29 @@ main.home{
 }
   
 }
+
+
+
+
+/*
+////////////////////////////////////////////////////
+                CONTEÚDO-BENEFICIOS
+////////////////////////////////////////////////////
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -306,6 +342,18 @@ main.bene p {
 main.bene h1 span {
   color: #0072C4;
 }
+main.bene section.principais-b ol li{
+  border-bottom: 1px solid black;
+}
+main.bene section.principais-b ol li p span{
+  font-weight: bold;
+}
+main.bene section.principais-b ol li p {
+  font-size: 1.2rem;
+}
+
+
+
 
 /*|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
                     CONTEÚDO-TESTE
@@ -319,7 +367,6 @@ section.teste{
 
 section.teste div h4{
   font-size: 1.45rem;
-  text-align: center;
 }
 
 
@@ -387,7 +434,7 @@ main.bet section.vicio h1{
 
 main.bet section.vicio h1 b {
   color: rgb(243, 68, 68);
-  border-bottom: 1px solid #c7c3c3;
+  border-bottom: 1px solid black  ;
 }
 
 main.bet section.vicio div.img{
@@ -403,20 +450,32 @@ main.bet section.vicio p.p1{
 }
 
 main.bet section.vicio p.p2{
-  border-bottom: 1px solid #c7c3c3;
+  border-bottom: 1px solid black;
   margin: 1vw 0 2vw 4vw;
+  padding: 1vw;
+}
+main.bet section.vicio p.p4{
+    
 }
 
 main.bet section.vicio ul{
   margin: 2vw 0 3vw 9vw;
 }
 
+/*||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+                  PAGINA BETS E APOSTAS / SAÚDE
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
+
+
+
+
+
 main.bet section.saude{
   display: flex;
   border-radius:1vw;
   background-color: #D2E4F5;
   padding: 10px 7px 10px 7px;
-  margin: 
+  margin: 0 0 4vw 0;
 }
 
 main.bet section.saude h1{
@@ -436,7 +495,44 @@ main.bet section.saude ul{
 main.bet section.saude img{
   margin: 3vw 0 0 24vw;
 }
-main.bet 
+
+main.bet{
+  section.caixa{
+    text-align: center;
+    h2{
+      font-size: 2rem;
+      margin: 3vw 0 3vw 0;
+    }
+    span.negrito{
+      font-weight: bold;
+    }
+    span.vermelho{
+      color: red;
+      font-weight: 700;
+    }
+    ul{
+      li{
+        p{
+          font-size: 1.4rem;
+          margin: 0 0 1.7vw 0;
+        }
+      }
+    }
+    margin: 0 0 6vw 0;
+  }
+}
+
+
+
+main.bet section.caixa h2{
+  font-size: 2rem;
+}
+
+main.bet section.vicio div ul li {
+  margin: 8px;
+}
+
+
 
 
 
@@ -444,7 +540,9 @@ main.bet
 /*|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
                     ESTUDAR-COM-TELAS
 |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
-section.banner-estudo {
+
+
+.banner-estudo {
   display: flex;
 }
 section.banner-estudo div.title h1{
@@ -468,7 +566,6 @@ main.estudartelas section.estudo-parte2{
  display: flex;
 }
 main.estudartelas section.estudo-parte2 div.esquerda h2{
-  font-family: "Poppins", sans-serif;
   font-weight: bold;
   font-size: 1.9rem;
   margin: 0 14vw;
@@ -478,17 +575,20 @@ main.estudartelas section.estudo-parte2 div.esquerda img{
 }
 main.estudartelas section.estudo-parte2 div.topicos{
     font-size: 1.4rem;
-
-font-weight: bold;main.estudartelas section.estudo-parte2 div.topicos h3{
-maid;iai}
-n.estudartelas section.estudo-parte2 div.topicnnumerumo{numer
+}
+main.estudartelas section.estudo-parte2 div.topicos h3{
+  font-weight: bold;
+  padding: 10px;
+}
+main.estudartelas section.estudo-parte2 div.topicos span.numero{
   color: gray;   
 }
 main.estudartelas section.estudo-parte2 div.topicos span.negrito{
    font-weight: bold;
 } 
-main.estudartelas section.estudo-parte2 
-div.topicos ul li{
- solid gray;
-  font-weight: bold;
+main.estudartelas section.estudo-parte2 div.topicos ul li{
+ padding: 20px;
+ border-bottom: 1px solid black;
+  
 }
+
