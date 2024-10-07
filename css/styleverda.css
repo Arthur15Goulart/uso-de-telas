@@ -151,11 +151,10 @@ table {
                         GERAL
 ////////////////////////////////////////////////////
 */
+
 html {
   font-size: calc(10px + 0.390625vw);
 }
-
-
 
 body {
   font-family: "Poppins", sans-serif;
@@ -178,7 +177,7 @@ header nav.navegacao {
   justify-content: space-between;
   background-color: #80CCD4;
   padding: 24px 12px 24px 12px;
-}cara-saindo-de-dentro-do-celular
+}
 
 header nav ul li a{
   color: #4444;
@@ -193,7 +192,6 @@ header nav ul li a span{
   color: black;
 }
 
-
 header{
   font-size: 0.95vw;
 }
@@ -206,9 +204,15 @@ header nav ul li {
   padding: 0 1vw 0 1vw;
 }
 
-
-
-
+.inicio {
+    border-radius: 1px;
+    background-color: #80CCD4;
+    transition: background-color 0.5s ease, color 0.5s ease, transform 0.5s ease;
+}
+.inicio:hover{
+    background-color: #80cbe85e;
+    transform: scale(1.15)
+}
 
 /*
 ////////////////////////////////////////////////////
@@ -241,6 +245,7 @@ main.home{
       li.fundo{
         font-size: 2rem;
         background-color: #80CAE8;
+        box-shadow: 10px 5px 5px 10px #80CAE8;
       }
       h2{
         font-weight: bold;
@@ -271,34 +276,49 @@ main.home{
     }
   }
 }
-  
+.button {
+  background-color: #80CAE8;
+  transition: background-color 0.5s;
+  border-radius: 10px;
+}
+
+.button:hover {
+  background-color: #477d92ce;
+}
+
+section.teste{
+  text-align: center;
+  margin: 4vw 0 2vw 0;
+}
+
+section.teste div h4{
+  font-size: 1.45rem;
 }
 
 
+section.teste div h4 span{
+  color: #62B8F6;
+  font-weight: bold;
+}
 
+section.teste div p{
+  color: black;
+  text-align: center;
+  margin: 0.8vw 0 0.5vw 0;
+}
 
-/*
-////////////////////////////////////////////////////
-                CONTEÚDO-BENEFICIOS
-////////////////////////////////////////////////////
-*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+section.teste div a{
+  background-color: #80CCD4;
+  color: white;
+  font-size: 17px;
+  margin: 30px 0 60px 0;
+  padding: 30px 70px 30px 70px;
+  border: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 520;
+  display: inline-block;
+}  
+}
 
 
 /*
@@ -355,67 +375,6 @@ main.bene section.principais-b ol li p {
 
 
 
-/*|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
-                    CONTEÚDO-TESTE
-|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
-
-
-section.teste{
-  text-align: center;
-  margin: 4vw 0 2vw 0;
-}
-
-section.teste div h4{
-  font-size: 1.45rem;
-}
-
-
-section.teste div h4 span{
-  color: #62B8F6;
-  font-weight: bold;
-}
-
-section.teste div p{
-  color: black;
-  text-align: center;
-  margin: 0.8vw 0 0.5vw 0;
-}
-
-section.teste div a{
-  background-color: #80CCD4;
-  color: white;
-  font-size: 17px;
-  margin: 30px 0 60px 0;
-  padding: 30px 70px 30px 70px;
-  border: none;
-  font-family: "Roboto", sans-serif;
-  font-weight: 520;
-  display: inline-block;
-}
-
-/*|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
-                    CONTEÚDO - DESENVOLVEDORES
-|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
-
-footer h1 {
-  font-size: 1.5rem;
-  text-align: center;
-  font-weight: 600;
-}
-
-footer ul{
-  margin: 1vw 80px 0 15vw;
-}
-
-footer ul li{
-  block-size: 100px;
-  display: inline-block;
-  margin: 2vw 3vw 0 0;
-  border: 1px solid #D9D9D9;
-  border-radius: 10px;
-  padding: 10px 7vw 0 10px;
-}
-
 
 /*|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
                   PAGINA BETS E APOSTAS---ELIAS
@@ -454,9 +413,7 @@ main.bet section.vicio p.p2{
   margin: 1vw 0 2vw 4vw;
   padding: 1vw;
 }
-main.bet section.vicio p.p4{
-    
-}
+
 
 main.bet section.vicio ul{
   margin: 2vw 0 3vw 9vw;
@@ -592,3 +549,46 @@ main.estudartelas section.estudo-parte2 div.topicos ul li{
   
 }
 
+/*|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+                    RODAPÉ
+|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
+
+footer{
+background-color: #b7eaff;
+text-align: center;
+margin: 1.5vw 0 0 0;
+  h1{
+    color: black;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 2vw 0 0 0;
+    margin: 0 0 1.5vw 0;
+  }
+  ul{
+    display: flex;
+    justify-content: center;
+      li{
+        font-size: 1rem;
+        margin: 0 1vw 2vw 1vw;
+      }
+  }
+  p{
+    padding: 0 0 1vw 0;
+    a{
+      span{
+        font-size: 2rem;
+      }
+    }
+  }
+}
+.desenvolvedores {
+  background-color: #b7eaff;
+  transition: background-color 0.5s;
+  border-radius: 10px;
+  transition: background-color 0.5s ease, color 0.5s ease, transform 0.5s ease;
+}
+
+.desenvolvedores:hover {
+  background-color: #99cfe5a4;
+  transform: scale(1.2)
+}
