@@ -178,7 +178,10 @@ header nav.navegacao {
   background-color: #80CCD4;
   padding: 24px 12px 24px 12px;
 }
-
+header nav h1{
+  font-size: 1.2rem;
+  font-weight: bold;
+}
 header nav ul li a{
   color: #4444;
 }
@@ -224,7 +227,7 @@ header nav ul li {
 main.home{
   section.bannerhome{
     h1{
-      margin: 2.5vw 0 2vw;
+      margin: 2.5vw 0 2vw 0;
       text-align: center;
       font-size: 3rem;
       font-weight: bold;
@@ -236,6 +239,7 @@ main.home{
     p{
       text-align: center;
       font-size: 1.5rem;
+      margin: 0 2vw 0 2vw
     }
   }
   section.maleficio{
@@ -442,6 +446,12 @@ main.bet section.saude h1{
 }
 main.bet section.saude p{
   margin: 2vw 0 0vw 6vw;
+  color: #ED6868;
+  font-size:185%;
+  font-weight: bold;
+}
+main.bet section.saude ul p.p4{
+  margin: 2vw 0 2vw 0vw;
   color: #ED6868;
   font-size:185%;
   font-weight: bold;
