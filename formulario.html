@@ -6,6 +6,7 @@
     <title>Formulário</title>
     <link rel="stylesheet" href="css/styleverda.css">
     <script src="https://kit.fontawesome.com/28d722bd5b.js" crossorigin="anonymous"></script>
+    <script src="forms.js"></script>
 </head>
 <body>
     <header>
@@ -39,16 +40,16 @@
         <fieldset>
             <legend>Quantas horas (em média) você utiliza as telas?</legend>
             <p><label>
-                <input type="radio" name="horas" value="0"> Menos de 2 horas.
+                <input type="radio" name="horas" value="0"> De 1 hora a 3 horas diárias.
             </label></p>
             <p><label>
-                <input type="radio" name="horas" value="1"> 2 a 4 horas.
+                <input type="radio" name="horas" value="1"> De 4 a 5 horas diárias.
             </label></p>
             <p><label>
-                <input type="radio" name="horas" value="2"> 4 a 6 horas.
+                <input type="radio" name="horas" value="2"> 6 a 8 horas diárias.
             </label></p>
             <p><label>
-                <input type="radio" name="horas" value="3"> Mais de 6 horas.
+                <input type="radio" name="horas" value="3"> Acima de 8 horas diárias.
             </label></p>
         </fieldset>
         <fieldset>
@@ -70,18 +71,27 @@
             </p>
         </fieldset>
         <fieldset>
-            <legend>Deseja ver a rotina indicada?</legend>
+            <legend>Você costuma fazer pausas?</legend>
             <p>
-                <label ><input type="radio" name="rotina" value="0">Sim</label>
+                <label><input type="radio" name="pausas" value="0">A cada 30 minutos</label>
             </p>
+            <p><label><input type="radio" name="pausas" value="1">A cada 1 hora</label></p>
+            <p><label><input type="radio" name="pausas" value="2">A cada 3 horas</label></p>
+            <p><label><input type="radio" name="pausas" value="3">Não faço pausas</label></p>
+        </fieldset>
+        <fieldset>
+            <legend>Para qual finalidade você mais utiliza as telas?</legend>
             <p>
-                <label ><input type="radio" name="rotina" value="1">Não</label>
+                <label><input type="radio" name="finalidade" value="0">Estudos</label>
             </p>
+            <p><label><input type="radio" name="finalidade" value="1">Trabalho</label></p>
+            <p><label><input type="radio" name="finalidade" value="2"></label>Outros (redes sociais, jogos, etc.)</p>
         </fieldset>
      <p>
         <input type="button" value="ENVIAR" onclick="finalizar()">
     </p>
     </form>
+    <div class="respostas">
     <div id="res">
 
     </div>
@@ -93,6 +103,13 @@
     </div>
     <div id="res4">
 
+    </div>
+    <div id="res5">
+
+    </div>
+    <div id="rotina">
+
+    </div>
     </div>
 </section>
 <footer>
@@ -126,51 +143,5 @@
         <a href="https://github.com/Arthur15Goulart/uso-de-telas.git"><span class="fa-brands fa-github"></span></a>
     </p>
 </footer>
-    <script>
-        function finalizar(){
-            const horas = document.querySelector('input[name="horas"]:checked');
-            const res = document.querySelector('div#res');
-        
-        if(horas){
-            const dependecia = horas.value;
-            if(dependecia === "0"){
-                res.innerHTML = `<h2> Baixa dependência.</h2>`;
-            } else if(dependecia === "1"){
-                res.innerHTML = `<h2>Moderada dependência.</h2>`;
-            } else if(dependecia === "2"){
-                res.innerHTML = `<h2> Alta dependência. </h2>`;
-            } else {
-                res.innerHTML = `<h2> Muito alta dependência. </h2>`;
-            }
-           } else{
-                res.innerHTML = `<h2> Por favor, selecione uma opção</h2>`;
-            }
-            const app = document.querySelector('input[name="controle"]:checked');
-            const res2 = document.querySelector('div#res2');
-
-            if(app){
-                const controle = app.value;
-                if(controle === "0"){
-                    res2.innerHTML = `<p>Você já utiliza um aplicativo para controle</p>`;
-                } else if (controle === "1") {
-                    res2.innerHTML = `<p>Use os seguintes aplicativos:</p> <ul><li> - Forest</li><li>- StayFocusd</li><li>- Freedom</li><li>- RescueTime</li></ul>`
-                } 
-            }
-            const atvds = document.querySelector('input[name="atrapalha"]:checked');
-            const res3 = document.querySelector('div#res3');
-
-            if(atvds){
-                const atrapalham = atvds.value
-                if(atrapalham === "0"){
-                    res3.innerHTML = `<p>Use os aplicativos de controle para delimitar um tempo de tela (2 a 3 horas é o recomendado)</p>
-                    <p>Para de usar os dispotivos no minímo 1 hora antes de ir deitar para dormir</p>`
-                } else {
-                    res3.innerHTML = `<p>Parabéns! Continue assim.</p>`
-                }
-            }
-            const rotina = document.querySelector('input[name="rotina"]:checked');
-            const res4 = document.querySelector('div#res4');
-        }
-    </script>
 </body>
 </html>
