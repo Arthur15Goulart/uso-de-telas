@@ -75,13 +75,13 @@ function finalizar() {
     }
     const rotina = document.querySelector('div#rotina');
     rotina.innerHTML = `<h3> Dicas que você pode incluir na sua rotina para diminuir o tempo nas telas:</h3> 
-    <ul>
-    <li>Manhã:
+    <ul class = "periodos">
+    <li><span>Manhã:</span>
     <ul><li> - Evite olhar o celular logo após acordar;</li><li> - Foque em algo físico (Meditação, alongamentos, Exercícios leves).</li>
     </ul></li>
-    <li>Tarde:
+    <li><span>Tarde:</span>
     <ul><li> - Fique um tempo de 30 minutos desconectado(Faça uma caminhada, leia um livro, converse com alguém, etc.)</li></ul></li>
-    <li>Noite:
-    <ul><li>Desconexão total, sem telass pelo menos uma hora antes de dormir.</li><li>Práticas de relaxamento (Meditação ou leitura.)</li></ul></li>    
+    <li><span>Noite:</span>
+    <ul><li>Desconexão total, sem telas pelo menos uma hora antes de dormir.</li><li>Práticas de relaxamento (Meditação ou leitura.)</li></ul></li>    
     </ul.>`
 }

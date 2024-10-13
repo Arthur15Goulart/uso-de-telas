@@ -560,6 +560,139 @@ main.estudartelas section.estudo-parte2 div.topicos ul li{
 }
 
 /*|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+                    FORMULÁRIO
+|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
+section.formulario{
+  margin: 2vw 0 0 0;
+  h1{
+    text-align: center;
+    font-size: 1.7rem;
+    span{
+      font-weight: bold;
+    } 
+    span.digital{
+      font-weight: bold;
+      color: #3895F9;
+    }
+  }
+  form{
+    text-align: center;
+    margin: 1vw 0 0 0;
+    fieldset{
+      margin: 1vw 2vw 1vw 2vw;
+      border: solid black 1px;
+      legend{
+        font-size: 1rem;
+        font-weight: bold;
+        padding: 0 1vw 1vw 1vw;
+      }
+      p{
+        font-size: 1rem;
+    }
+    p.ultimo{
+      padding: 0 0 1vw 0;
+    }
+   } 
+    p{
+      input.botao{
+      border: none;
+     background-color: #3483bb;
+     font-size: 1.2rem;
+     padding: 0.5vw 1.5vw 0.5vw 1.5vw;
+     color: white;
+     font-weight: bold;
+     border-radius: 30px;
+      }
+     
+    }
+}
+  div.respostas{
+    text-align: center;
+    background-color: #3895F9 ;
+    margin: 1vw 2vw 0 2vw;
+    border-radius: 30px;
+    div.res{
+      padding: 2vw 0 0 0;
+      h2{
+        font-size: 1.5rem;
+        color: white;
+        font-weight: bold;
+      }
+      p{
+        font-size: 1rem;
+        color: black;
+        font-style: italic;
+        margin: 0.4vw 0 2vw 0;
+        color: wheat;
+      }
+    }
+    div.res2{
+      p{
+        font-size: 1.2rem;
+        margin: 0 0 0.5vw 0;
+        color: white;
+      }
+      ul{
+        color: white;
+        font-size: 1.2rem;
+        margin: 0 0 0.5vw 0;
+      }
+    }
+    div.res3{
+      p{
+        font-size: 1.2rem;
+        color: white;
+      }
+    }
+    div.res4{
+      p{
+        font-size: 1.2rem;
+        color: white;
+        margin: 0 0 0.5vw 0;
+      }
+    } 
+    div.res5{
+      p{
+        font-size: 1.2rem;
+        color: white;
+        margin: 0 0 0.5vw 0;
+      }
+    }
+    div.rotina{
+      padding: 0 0 2vw 0;
+      margin: 1vw 0 0 0;
+      h3{
+        font-size: 1.3rem;
+        color: white;
+        margin: 0 0 1vw 0;
+      }
+      ul.periodos{
+        display: flex;
+        padding: 1vw 2vw  1vw 2vw;
+        background-color: #0d5386;
+        border-radius: 30px;
+        margin: 0 2vw 0 2vw;
+      li{
+        span{
+        font-size: 1.2rem;
+        color: white;
+        font-weight: bold;
+      }
+      ul{
+        li{
+          font-size: 1rem;
+          color: white;
+          margin: 0.5vw 0 0 0;
+           }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+/*|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
                     RODAPÉ
 |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
 
