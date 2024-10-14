@@ -158,7 +158,7 @@ html {
 
 body {
   font-family: "Poppins", sans-serif;
-  background-color: rgba(255, 253, 235, 0.452);
+  background-color: rgba(252, 250, 236, 0.315);
 }
 a {
   text-decoration: none;
@@ -215,111 +215,117 @@ header nav ul li {
 .inicio:hover {
   background-color: #80cbe85e;
   transform: scale(1.05);
-}
-
-/*
+}/*
 ////////////////////////////////////////////////////
                 CONTEÚDO-HOMEPAGE
 ////////////////////////////////////////////////////
 */
+.topicos {
+  margin: 5vw 0vw 4vw 5vw;
+  padding: 5vw 5vw 4vw 5vw;
+}
 
-main.home {
-  section.bannerhome {
-    h1 {
+main.home{
+  section.bannerhome{
+    h1{
       margin: 2.5vw 0 2vw 0;
       text-align: center;
       font-size: 3rem;
       font-weight: bold;
-      span {
-        color: #ff7e7e;
-        border-bottom: 1px solid#000000;
+      span{
+      color: #FF7E7E;
+      border-bottom: 1px solid#000000;
       }
     }
-    p {
+    p{
       text-align: center;
       font-size: 1.5rem;
-      margin: 0 2vw 0 2vw;
+      margin: 0 2vw 0 2vw
     }
   }
-  section.maleficio {
-    div.topicos {
+  section.maleficio{
+
+    div.topicos{
       text-align: center;
-      li.fundo {
+      li.fundo{
         font-size: 2rem;
+        border-radius: 5vw;
         background-color: #b7eaff;
-        box-shadow: 10px 5px 5px 10px #b7eaff;
+        box-shadow: 0px 0px 5px 10px #b7eaff;
       }
-      h2 {
+      h2{
         font-weight: bold;
         font-size: 2.5rem;
         margin: 4vw 0 4vw 0;
       }
-      ul {
-        li {
-          display: flex;
-          padding: 0 0 2vw 4vw;
-          img {
-            text-align: left;
-            padding: 2vw 0 0 0;
-          }
-          h3 {
-            font-size: 2rem;
+        ul{
+      li{
+        display: flex;
+        padding: 0 0 2vw 4vw;
+        img{
+          text-align: left;
+          padding: 2vw 0 0 0;
+        }
+        h3{
+          font-size: 2rem;
+          font-weight: bold;
+          margin: 3vw 0 3vw 0;
+        }
+        p{
+          font-size: 1.2rem;
+          margin: 0 16vw 0 10vw;
+          span{
             font-weight: bold;
-            margin: 3vw 0 3vw 0;
-          }
-          p {
-            font-size: 1.2rem;
-            margin: 0 16vw 0 10vw;
-            span {
-              font-weight: bold;
-            }
           }
         }
       }
     }
   }
-  .button {
-    background-color: #80cae8;
-    transition: background-color 0.5s;
-    border-radius: 10px;
-  }
-
-  .button:hover {
-    background-color: #477d92ce;
-  }
-
-  section.teste {
-    text-align: center;
-    margin: 4vw 0 2vw 0;
-  }
-
-  section.teste div h4 {
-    font-size: 1.45rem;
-  }
-
-  section.teste div h4 span {
-    color: #62b8f6;
-    font-weight: bold;
-  }
-
-  section.teste div p {
-    color: black;
-    text-align: center;
-    margin: 0.8vw 0 0.5vw 0;
-  }
-
-  section.teste div a {
-    background-color: #80ccd4;
-    color: white;
-    font-size: 17px;
-    margin: 30px 0 60px 0;
-    padding: 30px 70px 30px 70px;
-    border: none;
-    font-family: "Roboto", sans-serif;
-    font-weight: 520;
-    display: inline-block;
-  }
 }
+.button {
+  background-color: #80CAE8;
+  transition: background-color 0.5s;
+  border-radius: 10px;
+}
+
+.button:hover {
+  background-color: #477d92ce;
+}
+
+section.teste{
+  text-align: center;
+  margin: 4vw 0 2vw 0;
+}
+
+section.teste div h4{
+  font-size: 1.45rem;
+}
+
+
+section.teste div h4 span{
+  color: #62B8F6;
+  font-weight: bold;
+}
+
+section.teste div p{
+  color: black;
+  text-align: center;
+  margin: 0.8vw 0 0.5vw 0;
+}
+
+section.teste div a{
+  background-color: #80CCD4;
+  color: white;
+  font-size: 17px;
+  margin: 30px 0 60px 0;
+  padding: 30px 70px 30px 70px;
+  border: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 520;
+  display: inline-block;
+}  
+}
+
 
 /*
 ////////////////////////////////////////////////////
@@ -335,6 +341,8 @@ main.bene section.beneficios {
   margin: 4vw 5vw 4vw 5vw;
   background-color: #b7eaff;
   border-radius: 6vw;
+  background-color: #b7eaff;
+  box-shadow: 0px 0px 5px 5px #b7eaff;
   padding: 10px 7px 10px 7px;
 }
 main.bene section.beneficios {
@@ -362,8 +370,13 @@ main.bene p {
 main.bene h1 span {
   color: #0072c4;
 }
-main.bene section.principais-b ol li {
-  border-bottom: 1px solid black;
+.fundin {
+  font-size: 2rem;
+  border-radius: 2vw;
+  padding: 1px 1px 1px 1px;
+  margin: 2%;
+  background-color: #b7eaff;
+  box-shadow: 0px 0px 5px 10px #b7eaff;
 }
 main.bene section.principais-b ol li p span {
   font-weight: bold;
@@ -420,11 +433,11 @@ main.bet section.vicio ul {
 
 main.bet section.saude {
   display: flex;
-  border-radius: 1vw;
+  border-radius: 5vw;
   background-color: #b7eaff;
-  box-shadow: 10px 5px 5px 10px #b7eaff;
+  box-shadow: 0px 0px 5px 5px #b7eaff;
   padding: 10px 7px 10px 7px;
-  margin: 0 0 4vw 0;
+  margin: 0 4vw 0;
 }
 
 main.bet section.saude h1 {
@@ -497,6 +510,7 @@ main.bet section.vicio div ul li {
   margin: 5vw 0vw 4vw 5vw;
   background-color: #b7eaff;
   border-radius: 6vw;
+  box-shadow: 0px 0px 5px 5px #b7eaff;
   padding: auto;
 }
 section.banner-estudo div.title h1 {
@@ -541,18 +555,11 @@ main.estudartelas section.estudo-parte2 div.topicos span.negrito {
   font-weight: bold;
 }
 main.estudartelas section.estudo-parte2 div.topicos ul li {
-  padding: 20px;
-  border-bottom: 1px solid black;
+  padding: 10px;
 }
 
-.topicos {
-  margin: 5vw 0vw 4vw 5vw;
-  background-color: #b7eaff;
-  border-radius: 6vw;
-  padding: 5vw 5vw 4vw 5vw;
-}
 /*||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| 
-                    zLÁRIO 
+                    FORMULÁRIO 
 |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
 section.formulario {
   margin: 2vw 0 0 0;
@@ -587,6 +594,7 @@ section.formulario fieldset {
   padding: 1.5vw;
   background-color: #e9eff6;
 }
+
 
 section.formulario legend {
   font-size: 1.1rem;
@@ -623,7 +631,14 @@ section.formulario input.botao:hover {
 }
 
 /* Respostas */
-
+section.formulario div.respostas {
+  text-align: center;
+  background-color: #3895f9;
+  margin: 2vw 2vw;
+  padding: 2vw;
+  border-radius: 30px;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.288);
+}
 
 section.formulario div.respostas h2 {
   font-size: 1.6rem;
