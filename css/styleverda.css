@@ -4,7 +4,7 @@
 ===========================================================
 */
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 /* 
 ==========================================================
@@ -171,31 +171,30 @@ a {
 ////////////////////////////////////////////////////
 */
 
-
 header nav.navegacao {
   display: flex;
   justify-content: space-between;
-  background-color: #80CCD4;
+  background-color: #80ccd4;
   padding: 24px 12px 24px 12px;
 }
-header nav h1{
+header nav h1 {
   font-size: 1.2rem;
   font-weight: bold;
 }
-header nav ul li a{
+header nav ul li a {
   color: #4444;
 }
 
-header nav ul li a{
+header nav ul li a {
   color: #444444;
 }
 
-header nav ul li a span{
+header nav ul li a span {
   font-weight: bold;
   color: black;
 }
 
-header{
+header {
   font-size: 0.95vw;
 }
 
@@ -208,13 +207,14 @@ header nav ul li {
 }
 
 .inicio {
-    border-radius: 1px;
-    background-color: #80CCD4;
-    transition: background-color 0.5s ease, color 0.5s ease, transform 0.5s ease;
+  padding: 15px 12px 15px 12px;
+  border-radius: 1px;
+  background-color: #80ccd4;
+  transition: background-color 0.5s ease, color 0.5s ease, transform 0.5s ease;
 }
-.inicio:hover{
-    background-color: #80cbe85e;
-    transform: scale(1.15)
+.inicio:hover {
+  background-color: #80cbe85e;
+  transform: scale(1.05);
 }
 
 /*
@@ -223,107 +223,103 @@ header nav ul li {
 ////////////////////////////////////////////////////
 */
 
-
-main.home{
-  section.bannerhome{
-    h1{
+main.home {
+  section.bannerhome {
+    h1 {
       margin: 2.5vw 0 2vw 0;
       text-align: center;
       font-size: 3rem;
       font-weight: bold;
-      span{
-      color: #FF7E7E;
-      border-bottom: 1px solid#000000;
+      span {
+        color: #ff7e7e;
+        border-bottom: 1px solid#000000;
       }
     }
-    p{
+    p {
       text-align: center;
       font-size: 1.5rem;
-      margin: 0 2vw 0 2vw
+      margin: 0 2vw 0 2vw;
     }
   }
-  section.maleficio{
-    
-    div.topicos{
+  section.maleficio {
+    div.topicos {
       text-align: center;
-      li.fundo{
+      li.fundo {
         font-size: 2rem;
-        background-color: #80CAE8;
-        box-shadow: 10px 5px 5px 10px #80CAE8;
+        background-color: #b7eaff;
+        box-shadow: 10px 5px 5px 10px #b7eaff;
       }
-      h2{
+      h2 {
         font-weight: bold;
         font-size: 2.5rem;
         margin: 4vw 0 4vw 0;
       }
-        ul{
-      li{
-        display: flex;
-        padding: 0 0 2vw 4vw;
-        img{
-          text-align: left;
-          padding: 2vw 0 0 0;
-        }
-        h3{
-          font-size: 2rem;
-          font-weight: bold;
-          margin: 3vw 0 3vw 0;
-        }
-        p{
-          font-size: 1.2rem;
-          margin: 0 16vw 0 10vw;
-          span{
+      ul {
+        li {
+          display: flex;
+          padding: 0 0 2vw 4vw;
+          img {
+            text-align: left;
+            padding: 2vw 0 0 0;
+          }
+          h3 {
+            font-size: 2rem;
             font-weight: bold;
+            margin: 3vw 0 3vw 0;
+          }
+          p {
+            font-size: 1.2rem;
+            margin: 0 16vw 0 10vw;
+            span {
+              font-weight: bold;
+            }
           }
         }
       }
     }
   }
-}
-.button {
-  background-color: #80CAE8;
-  transition: background-color 0.5s;
-  border-radius: 10px;
-}
+  .button {
+    background-color: #80cae8;
+    transition: background-color 0.5s;
+    border-radius: 10px;
+  }
 
-.button:hover {
-  background-color: #477d92ce;
+  .button:hover {
+    background-color: #477d92ce;
+  }
+
+  section.teste {
+    text-align: center;
+    margin: 4vw 0 2vw 0;
+  }
+
+  section.teste div h4 {
+    font-size: 1.45rem;
+  }
+
+  section.teste div h4 span {
+    color: #62b8f6;
+    font-weight: bold;
+  }
+
+  section.teste div p {
+    color: black;
+    text-align: center;
+    margin: 0.8vw 0 0.5vw 0;
+  }
+
+  section.teste div a {
+    background-color: #80ccd4;
+    color: white;
+    font-size: 17px;
+    margin: 30px 0 60px 0;
+    padding: 30px 70px 30px 70px;
+    border: none;
+    font-family: "Roboto", sans-serif;
+    font-weight: 520;
+    display: inline-block;
+  }
 }
-
-section.teste{
-  text-align: center;
-  margin: 4vw 0 2vw 0;
-}
-
-section.teste div h4{
-  font-size: 1.45rem;
-}
-
-
-section.teste div h4 span{
-  color: #62B8F6;
-  font-weight: bold;
-}
-
-section.teste div p{
-  color: black;
-  text-align: center;
-  margin: 0.8vw 0 0.5vw 0;
-}
-
-section.teste div a{
-  background-color: #80CCD4;
-  color: white;
-  font-size: 17px;
-  margin: 30px 0 60px 0;
-  padding: 30px 70px 30px 70px;
-  border: none;
-  font-family: "Roboto", sans-serif;
-  font-weight: 520;
-  display: inline-block;
-}  
-}
-
 
 /*
 ////////////////////////////////////////////////////
@@ -336,17 +332,17 @@ main.bene {
 }
 
 main.bene section.beneficios {
-  margin: 4vw 5vw 4vw 5vw ;
-  background-color: #80CAE8;
-	border-radius: 6vw;
-	padding: 10px 7px 10px 7px;
+  margin: 4vw 5vw 4vw 5vw;
+  background-color: #b7eaff;
+  border-radius: 6vw;
+  padding: 10px 7px 10px 7px;
 }
 main.bene section.beneficios {
   display: flex;
 }
 
 main.bene section.beneficios div.texto1 {
-  margin: 9vw 3vw 0 2vw ;
+  margin: 9vw 3vw 0 2vw;
   font-size: 1.2vw;
 }
 main.bene h1 {
@@ -364,65 +360,57 @@ main.bene p {
   margin: 2vw 2vw 2vw 2vw;
 }
 main.bene h1 span {
-  color: #0072C4;
+  color: #0072c4;
 }
-main.bene section.principais-b ol li{
+main.bene section.principais-b ol li {
   border-bottom: 1px solid black;
 }
-main.bene section.principais-b ol li p span{
+main.bene section.principais-b ol li p span {
   font-weight: bold;
 }
 main.bene section.principais-b ol li p {
   font-size: 1.2rem;
 }
 
-
-
-
-
 /*|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
                   PAGINA BETS E APOSTAS---ELIAS
 |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
 
-
-main.bet section.vicio{
+main.bet section.vicio {
   display: flex;
 }
 
-main.bet section.vicio h1{
-  font-size:400%;
-  font-weight:bold;
+main.bet section.vicio h1 {
+  font-size: 400%;
+  font-weight: bold;
   margin: 8vw 0 0 9vw;
 }
 
 main.bet section.vicio h1 b {
-  color: #ED6868;
+  color: #ed6868;
 }
 main.bet section.vicio h1 strong {
-  color: #ED6868;
-  border-bottom: 1px solid black  ;
+  color: #ed6868;
+  border-bottom: 1px solid black;
 }
 
-main.bet section.vicio div.img{
+main.bet section.vicio div.img {
   margin: 5vw 0 0 15vw;
-  
 }
 
-main.bet section.vicio p.p1{
+main.bet section.vicio p.p1 {
   font-size: 200%;
-  font-weight:bolder;
+  font-weight: bolder;
   margin: 8vw 0 0 9vw;
-  
 }
 
-main.bet section.vicio p.p2{
+main.bet section.vicio p.p2 {
   border-bottom: 1px solid black;
   margin: 1vw 0 2vw 4vw;
   padding: 1vw;
 }
 
-
-main.bet section.vicio ul{
+main.bet section.vicio ul {
   margin: 2vw 0 3vw 9vw;
 }
 
@@ -430,60 +418,57 @@ main.bet section.vicio ul{
                   PAGINA BETS E APOSTAS / SAÚDE
 ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
 
-
-
-
-
-main.bet section.saude{
+main.bet section.saude {
   display: flex;
-  border-radius:1vw;
-  background-color: #D2E4F5;
+  border-radius: 1vw;
+  background-color: #b7eaff;
+  box-shadow: 10px 5px 5px 10px #b7eaff;
   padding: 10px 7px 10px 7px;
   margin: 0 0 4vw 0;
 }
 
-main.bet section.saude h1{
+main.bet section.saude h1 {
   font-size: 300%;
   font-weight: bold;
   margin: 2vw 0 3vw 6vw;
 }
-main.bet section.saude p{
+main.bet section.saude p {
   margin: 2vw 0 0vw 6vw;
-  color: #ED6868;
-  font-size:185%;
+  color: #ed6868;
+  font-size: 185%;
   font-weight: bold;
 }
-main.bet section.saude ul p.p4{
+main.bet section.saude ul p.p4 {
   margin: 2vw 0 2vw 0vw;
-  color: #ED6868;
-  font-size:185%;
+  color: #ed6868;
+  font-size: 185%;
   font-weight: bold;
 }
-main.bet section.saude ul{
+main.bet section.saude ul {
   margin: 2vw 0 3vw 6vw;
 }
-main.bet section.saude img{
+main.bet section.saude img {
   margin: 3vw 0 0 24vw;
 }
 
-main.bet{
-  section.caixa{
+main.bet {
+  section.caixa {
     text-align: center;
-    h2{
+    h2 {
       font-size: 2rem;
       margin: 3vw 0 3vw 0;
     }
-    span.negrito{
+    span.negrito {
       font-weight: bold;
     }
-    span.vermelho{
+    span.vermelho {
       color: red;
       font-weight: 700;
       border-bottom: 1px solid black;
     }
-    ul{
-      li{
-        p{
+    ul {
+      li {
+        p {
           font-size: 1.4rem;
           margin: 0 0 1.7vw 0;
         }
@@ -493,9 +478,7 @@ main.bet{
   }
 }
 
-
-
-main.bet section.caixa h2{
+main.bet section.caixa h2 {
   font-size: 2rem;
 }
 
@@ -503,226 +486,241 @@ main.bet section.vicio div ul li {
   margin: 8px;
 }
 
-
-
-
-
-
 /*|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
                     ESTUDAR-COM-TELAS
 |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
 
-
 .banner-estudo {
   display: flex;
 }
-section.banner-estudo div.title h1{
+.title {
+  margin: 5vw 0vw 4vw 5vw;
+  background-color: #b7eaff;
+  border-radius: 6vw;
+  padding: auto;
+}
+section.banner-estudo div.title h1 {
   font-weight: bold;
   font-size: 2rem;
   margin: 6vw 15vw 0;
-  border-bottom: 2px solid #c7c3c3;
+  border-bottom: 1px solid #000000;
 }
-main.estudartelas section.banner-estudo h1 span.tecnologia{
-  color: #3895F9;
+main.estudartelas section.banner-estudo h1 span.tecnologia {
+  color: #3895f9;
   margin: 0 6vw;
 }
 main.estudartelas section.banner-estudo div.title p.p {
   margin: 1vw 14vw;
   font-size: 1.2rem;
 }
- main.estudartelas section.banner-estudo div.imagem-menino img{
- margin: 4vw;
+main.estudartelas section.banner-estudo div.imagem-menino img {
+  margin: 4vw;
 }
-main.estudartelas section.estudo-parte2{
- display: flex;
+main.estudartelas section.estudo-parte2 {
+  display: flex;
 }
-main.estudartelas section.estudo-parte2 div.esquerda h2{
+main.estudartelas section.estudo-parte2 div.esquerda h2 {
   font-weight: bold;
   font-size: 1.9rem;
-  margin: 0 14vw;
+  margin: 5vw 14vw;
 }
-main.estudartelas section.estudo-parte2 div.esquerda img{
-  margin: 1vw 11vw;
+main.estudartelas section.estudo-parte2 div.esquerda img {
+  margin: 0vw 0vw 5vw 10vw;
 }
-main.estudartelas section.estudo-parte2 div.topicos{
-    font-size: 1.4rem;
+main.estudartelas section.estudo-parte2 div.topicos {
+  font-size: 1.4rem;
 }
-main.estudartelas section.estudo-parte2 div.topicos h3{
+main.estudartelas section.estudo-parte2 div.topicos h3 {
   font-weight: bold;
   padding: 10px;
 }
-main.estudartelas section.estudo-parte2 div.topicos span.numero{
-  color: gray;   
+main.estudartelas section.estudo-parte2 div.topicos span.numero {
+  color: gray;
 }
-main.estudartelas section.estudo-parte2 div.topicos span.negrito{
-   font-weight: bold;
-} 
-main.estudartelas section.estudo-parte2 div.topicos ul li{
- padding: 20px;
- border-bottom: 1px solid black;
-  
+main.estudartelas section.estudo-parte2 div.topicos span.negrito {
+  font-weight: bold;
+}
+main.estudartelas section.estudo-parte2 div.topicos ul li {
+  padding: 20px;
+  border-bottom: 1px solid black;
 }
 
-/*|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
-                    FORMULÁRIO
+.topicos {
+  margin: 5vw 0vw 4vw 5vw;
+  background-color: #b7eaff;
+  border-radius: 6vw;
+  padding: 5vw 5vw 4vw 5vw;
+}
+/*||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| 
+                    zLÁRIO 
 |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
-section.formulario{
+section.formulario {
   margin: 2vw 0 0 0;
-  h1{
-    text-align: center;
-    font-size: 1.7rem;
-    span{
-      font-weight: bold;
-    } 
-    span.digital{
-      font-weight: bold;
-      color: #3895F9;
-    }
-  }
-  form{
-    text-align: center;
-    margin: 1vw 0 0 0;
-    fieldset{
-      margin: 1vw 2vw 1vw 2vw;
-      border: solid black 1px;
-      legend{
-        font-size: 1rem;
-        font-weight: bold;
-        padding: 0 1vw 1vw 1vw;
-      }
-      p{
-        font-size: 1rem;
-    }
-    p.ultimo{
-      padding: 0 0 1vw 0;
-    }
-   } 
-    p{
-      input.botao{
-      border: none;
-     background-color: #3483bb;
-     font-size: 1.2rem;
-     padding: 0.5vw 1.5vw 0.5vw 1.5vw;
-     color: white;
-     font-weight: bold;
-     border-radius: 30px;
-      }
-     
-    }
-}
-  div.respostas{
-    text-align: center;
-    background-color: #3895F9 ;
-    margin: 1vw 2vw 0 2vw;
-    border-radius: 30px;
-    div.res{
-      padding: 2vw 0 0 0;
-      h2{
-        font-size: 1.5rem;
-        color: white;
-        font-weight: bold;
-      }
-      p{
-        font-size: 1rem;
-        color: black;
-        font-style: italic;
-        margin: 0.4vw 0 2vw 0;
-        color: wheat;
-      }
-    }
-    div.res2{
-      p{
-        font-size: 1.2rem;
-        margin: 0 0 0.5vw 0;
-        color: white;
-      }
-      ul{
-        color: white;
-        font-size: 1.2rem;
-        margin: 0 0 0.5vw 0;
-      }
-    }
-    div.res3{
-      p{
-        font-size: 1.2rem;
-        color: white;
-      }
-    }
-    div.res4{
-      p{
-        font-size: 1.2rem;
-        color: white;
-        margin: 0 0 0.5vw 0;
-      }
-    } 
-    div.res5{
-      p{
-        font-size: 1.2rem;
-        color: white;
-        margin: 0 0 0.5vw 0;
-      }
-    }
-    div.rotina{
-      padding: 0 0 2vw 0;
-      margin: 1vw 0 0 0;
-      h3{
-        font-size: 1.3rem;
-        color: white;
-        margin: 0 0 1vw 0;
-      }
-      ul.periodos{
-        display: flex;
-        padding: 1vw 2vw  1vw 2vw;
-        background-color: #0d5386;
-        border-radius: 30px;
-        margin: 0 2vw 0 2vw;
-      li{
-        span{
-        font-size: 1.2rem;
-        color: white;
-        font-weight: bold;
-      }
-      ul{
-        li{
-          font-size: 1rem;
-          color: white;
-          margin: 0.5vw 0 0 0;
-           }
-          }
-        }
-      }
-    }
-  }
+  padding: 2vw;
+  background-color: #f3f6fa;
+  border-radius: 15px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
 }
 
+section.formulario h1 {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #2c3e50;
+  margin-bottom: 1.5vw;
+}
+
+section.formulario h1 span.digital {
+  color: #3895f9;
+  font-weight: bold;
+}
+
+section.formulario form {
+  text-align: center;
+  margin-top: 1vw;
+}
+
+section.formulario fieldset {
+  margin: 1vw 2vw;
+  border: 2px solid #2c3e50;
+  border-radius: 10px;
+  padding: 1.5vw;
+  background-color: #e9eff6;
+}
+
+section.formulario legend {
+  font-size: 1.1rem;
+  font-weight: bold;
+  padding-bottom: 1vw;
+  color: #2c3e50;
+}
+
+section.formulario p {
+  font-size: 1rem;
+  margin-bottom: 1vw;
+  color: #34495e;
+}
+
+section.formulario p.ultimo {
+  padding-bottom: 1vw;
+}
+
+section.formulario input.botao {
+  border: none;
+  background-color: #3483bb;
+  font-size: 1.2rem;
+  padding: 0.8vw 2vw;
+  color: white;
+  font-weight: bold;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+section.formulario input.botao:hover {
+  background-color: #286a99;
+  transform: scale(1.05);
+}
+
+/* Respostas */
+
+
+section.formulario div.respostas h2 {
+  font-size: 1.6rem;
+  color: white;
+  font-weight: bold;
+  margin-bottom: 1vw;
+}
+
+section.formulario div.respostas p {
+  font-size: 1rem;
+  color: wheat;
+  font-style: italic;
+  margin: 0.5vw 0 2vw;
+}
+
+section.formulario div.res2 p,
+section.formulario div.res3 p,
+section.formulario div.res4 p,
+section.formulario div.res5 p {
+  font-size: 1.2rem;
+  color: white;
+  margin-bottom: 0.7vw;
+}
+
+section.formulario div.res2 ul,
+section.formulario div.res4 ul,
+section.formulario div.res5 ul {
+  color: white;
+  font-size: 1.2rem;
+  margin-bottom: 0.7vw;
+}
+
+/* Rotina */
+section.formulario div.rotina {
+  padding-bottom: 2vw;
+  margin-top: 1vw;
+}
+
+section.formulario div.rotina h3 {
+  font-size: 1.4rem;
+  color: white;
+  margin-bottom: 1vw;
+}
+
+section.formulario ul.periodos {
+  display: flex;
+  justify-content: space-between;
+  padding: 1vw 2vw;
+  background-color: #0d5386;
+  border-radius: 30px;
+  margin: 0 2vw;
+}
+
+section.formulario ul.periodos li {
+  list-style: none;
+  text-align: center;
+}
+
+section.formulario ul.periodos li span {
+  font-size: 1.2rem;
+  color: white;
+  font-weight: bold;
+}
+
+section.formulario ul.periodos li ul li {
+  font-size: 1rem;
+  color: white;
+  margin-top: 0.5vw;
+}
 
 /*|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
                     RODAPÉ
 |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
 
-footer{
-background-color: #b7eaff;
-text-align: center;
-margin: 1.5vw 0 0 0;
-  h1{
+footer {
+  background-color: #b7eaff;
+  text-align: center;
+  margin: 1.5vw 0 0 0;
+  h1 {
     color: black;
     font-size: 1.5rem;
     font-weight: bold;
     padding: 2vw 0 0 0;
     margin: 0 0 1.5vw 0;
   }
-  ul{
+  ul {
     display: flex;
     justify-content: center;
-      li{
-        font-size: 1rem;
-        margin: 0 1vw 2vw 1vw;
-      }
+    li {
+      font-size: 1rem;
+      margin: 0 1vw 2vw 1vw;
+    }
   }
-  p{
+  p {
     padding: 0 0 1vw 0;
-    a{
-      span{
+    a {
+      span {
         font-size: 2rem;
       }
     }
@@ -737,5 +735,5 @@ margin: 1.5vw 0 0 0;
 
 .desenvolvedores:hover {
   background-color: #99cfe5a4;
-  transform: scale(1.2)
+  transform: scale(1.2);
 }
