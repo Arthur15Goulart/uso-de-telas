@@ -158,7 +158,7 @@ html {
 
 body {
   font-family: "Poppins", sans-serif;
-  background-color: rgb(255, 255, 255);
+  background-color: rgba(255, 253, 235, 0.452);
 }
 a {
   text-decoration: none;
@@ -396,7 +396,10 @@ main.bet section.vicio h1{
 }
 
 main.bet section.vicio h1 b {
-  color: rgb(243, 68, 68);
+  color: #ED6868;
+}
+main.bet section.vicio h1 strong {
+  color: #ED6868;
   border-bottom: 1px solid black  ;
 }
 
@@ -476,6 +479,7 @@ main.bet{
     span.vermelho{
       color: red;
       font-weight: 700;
+      border-bottom: 1px solid black;
     }
     ul{
       li{
