@@ -4,10 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário</title>
-    <link rel="stylesheet" href="css/styleverda.css">
-    <link rel="icon" href="src/img/favicon-32x32.png" type="image/png">
-    <script src="https://kit.fontawesome.com/28d722bd5b.js" crossorigin="anonymous"></script>
-    <script src="forms.js"></script>
 </head>
 <body>
     <header>
@@ -18,7 +14,7 @@
             </div>
             <ul>
                 <li  class="inicio">
-                    <a href="index.html">INÍCIO</a>
+                    <a href="index.html"><span>INÍCIO</span></a>
                 </li>
                 <li  class="inicio">
                     <a href="bet.html">APOSTAS DIGITAIS</a>
@@ -30,119 +26,38 @@
                     <a href="estudar-com-telas.html">ESTUDAR COM AS TELAS</a>
                 </li>
                 <li  class="inicio">
-                    <a href="formulario.html"><span>FORMULÁRIO</span></a>
+                    <a href="formulario.html">FORMULÁRIO</a>
                 </li>
             </ul>
         </nav>
     </header>
-<section class="formulario">
-    <h1>Teste seu nível de <span>Dependência</span> <span class="digital">Digital:</span></h1>
-    <form action="#" method="get">
+    <main>
+        <form action="#" method="get">
+        <h1>Responda as seguintes perguntas:</h1>
+        <label for="horas"><p>Quantas horas por dia você usa as telas? <input type="number" name="horas" id="horas"></p></label>
         <fieldset>
-            <legend>Quantas horas (em média) você utiliza as telas?</legend>
-            <p><label>
-                <input type="radio" name="horas" value="0"> De 1 hora a 3 horas diárias.
-            </label></p>
-            <p><label>
-                <input type="radio" name="horas" value="1"> De 4 a 5 horas diárias.
-            </label></p>
-            <p><label>
-                <input type="radio" name="horas" value="2"> 6 a 8 horas diárias.
-            </label></p>
-            <p class="ultimo"><label>
-                <input type="radio" name="horas" value="3"> Acima de 8 horas diárias.
-            </label></p>
+            <legend>Para quais atividades você mais utiliza as telas?</legend>
+            <label>
+                <input type="radio" name="atvs" value="0">Estudos
+            </label>
+            <label>
+                <input type="radio" name="atvs" value="1">Trabalho
+            </label>
+            <label>
+                <input type="radio" name="atvs" value="2">Outros (redes sociais, jogos, outros, etc.)
+            </label>
         </fieldset>
         <fieldset>
-            <legend>Você utiliza algum aplicativo de controle?</legend>
-            <p><label>
-                <input type="radio" name="controle" value="0">Sim
-            </label></p>
-            <p class="ultimo"><label>
-                <input type="radio" name="controle" value="1">Não
-            </label></p>
+            <legend>Você utiliza alguma proteção ocular? (óculos, filtro de luz azul, etc)</legend>
+            <label>
+                <input type="radio" name="protecao" value="0">Sim
+            </label>
+            <label>
+                <input type="radio" name="protecao" value="1">Não
+            </label>
         </fieldset>
-        <fieldset>
-            <legend>Utilizar as telas atrapalham seu sono ou atividades diárias?</legend>
-            <p>
-                <label ><input type="radio" name="atrapalha" value="0">Sim</label>
-            </p>
-            <p class="ultimo">
-                <label ><input type="radio" name="atrapalha" value="1">Não</label>
-            </p>
-        </fieldset>
-        <fieldset>
-            <legend>Você costuma fazer pausas?</legend>
-            <p>
-                <label><input type="radio" name="pausas" value="0">A cada 30 minutos</label>
-            </p>
-            <p><label><input type="radio" name="pausas" value="1">A cada 1 hora</label></p>
-            <p><label><input type="radio" name="pausas" value="2">A cada 3 horas</label></p>
-            <p class="ultimo"><label><input type="radio" name="pausas" value="3">Não faço pausas</label></p>
-        </fieldset>
-        <fieldset>
-            <legend>Para qual finalidade você mais utiliza as telas?</legend>
-            <p>
-                <label><input type="radio" name="finalidade" value="0">Estudos</label>
-            </p>
-            <p><label><input type="radio" name="finalidade" value="1">Trabalho</label></p>
-            <p class="ultimo"><label><input type="radio" name="finalidade" value="2"></label>Outros (redes sociais, jogos, etc.)</p>
-        </fieldset>
-     <p>
-        <input type="button" value="ENVIAR" onclick="finalizar()" class="botao">
-    </p>
+        <input type="button" value="Enviar" onclick="recomendacao()">
     </form>
-    <div class="respostas">
-    <div id="res" class="res">
-
-    </div>
-    <div id="res2" class="res2">
-
-    </div>
-    <div id="res3" class="res3">
-
-    </div>
-    <div id="res4" class="res4">
-
-    </div>
-    <div id="res5" class="res5">
-
-    </div>
-    <div id="rotina" class="rotina">
-
-    </div>
-    </div>
-</section>
-<footer>
-    <h1>
-        Desenvolvedores
-    </h1>
-    <ul>
-        <li class="desenvolvedores">
-            <a href="https://github.com/Arthur15Goulart">Arthur Goulart Teixeira Fábio</a>
-        </li>
-        <li  class="desenvolvedores">
-            <a href="https://github.com/carloshenriqueok">Carlos Henrique Pereira Santos</a>
-        </li>
-        <li  class="desenvolvedores">
-            <a href="https://github.com/Eliaskmi">Elias Davi de Souza</a>
-        </li>
-        <li  class="desenvolvedores">
-            <a href="https://github.com/jotakk">João Gabriel Menezes de Oliveira Mota</a>
-        </li>
-        <li  class="desenvolvedores">
-            <a href="https://github.com/RaulStenger">Raul Stenger</a>
-        </li>
-        <li  class="desenvolvedores">
-            <a href="https://github.com/rodolphorocha">Rodolpho da Silva Rocha</a>
-        </li>
-        <li  class="desenvolvedores">
-            <a href="https://github.com/doginvi">Victor de Sousa</a>
-        </li>
-    </ul>
-    <p>
-        <a href="https://github.com/Arthur15Goulart/uso-de-telas.git"><span class="fa-brands fa-github"></span></a>
-    </p>
-</footer>
+    </main>
 </body>
 </html>
