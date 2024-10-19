@@ -508,7 +508,6 @@ main.bet section.vicio div ul li {
 }
 .title {
   margin: 5vw 0vw 4vw 5vw;
-  padding: auto;
 }
 section.banner-estudo div.title h1 {
   font-weight: bold;
@@ -532,7 +531,7 @@ main.estudartelas section.estudo-parte2 {
   display: flex;
   border-radius: 2vw;
   background-color: #b7eaff;
-  padding: 1px 0 1px 0 0;
+  padding: 1px 0 1px 0 ;
   margin: 6vw 4vw 10vw 4vw ;
 }
 main.estudartelas section.estudo-parte2 div.esquerda h2 {
@@ -544,12 +543,17 @@ main.estudartelas section.estudo-parte2 div.esquerda h2 {
 main.estudartelas section.estudo-parte2 div.esquerda img {
   margin: 0vw 0vw 5vw 10vw;
 }
-main.estudartelas section.estudo-parte2 div.topicos {
-  font-size: 1.4rem;
+main.estudartelas section.estudo-parte2 div.esquerda p a{
+  text-decoration: underline;
+  color: #3483bb;
+}
+main.estudartelas section.estudo-parte2 div.esquerda p{
+  padding: 0 0 0 12vw;
 }
 main.estudartelas section.estudo-parte2 div.topicos h3 {
   font-weight: bold;
   padding: 10px;
+  font-size: 1.7rem;
 }
 main.estudartelas section.estudo-parte2 div.topicos span.numero {
   color: gray;
@@ -561,7 +565,6 @@ main.estudartelas section.estudo-parte2 div.topicos ul li {
   padding: 10px;
   border-bottom: 1px solid black;
 }
-
 /*||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| 
                     FORMULÁRIO 
 |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
