@@ -2,8 +2,9 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulário</title>
+    <meta id="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de recomendações</title>
+    <script src="forms.js"></script>
 </head>
 <body>
     <header>
@@ -34,30 +35,41 @@
     <main>
         <form action="#" method="get">
         <h1>Responda as seguintes perguntas:</h1>
-        <label for="horas"><p>Quantas horas por dia você usa as telas? <input type="number" name="horas" id="horas"></p></label>
+        <label for="horas">Quantas horas em média você usa as telas diariamente? <input type="number" id="horas" id="horas"></label>
         <fieldset>
             <legend>Para quais atividades você mais utiliza as telas?</legend>
             <label>
-                <input type="radio" name="atvs" value="0">Estudos
+                <input type="radio" id="atvs" value="0">Estudos
             </label>
             <label>
-                <input type="radio" name="atvs" value="1">Trabalho
+                <input type="radio" id="atvs" value="1">Trabalho
             </label>
             <label>
-                <input type="radio" name="atvs" value="2">Outros (redes sociais, jogos, outros, etc.)
+                <input type="radio" id="atvs" value="2">Outros (redes sociais, jogos, outros, etc.)
             </label>
         </fieldset>
         <fieldset>
             <legend>Você utiliza alguma proteção ocular? (óculos, filtro de luz azul, etc)</legend>
             <label>
-                <input type="radio" name="protecao" value="0">Sim
+                <input type="radio" id="protecao" value="0">Sim
             </label>
             <label>
-                <input type="radio" name="protecao" value="1">Não
+                <input type="radio" id="protecao" value="1">Não
             </label>
         </fieldset>
+        <fieldset>
+            <legend>O uso das telas atrapalha suas atividades diárias?</legend>
+            <label>
+                <input type="radio" id="atrapalha" value="0">Sim
+            </label>
+            <label>
+                <input type="radio" id="atrapalha" value="1">Não
+            </label>
+        </fieldset>
+        <h2>Ver recomendações:</h2>
         <input type="button" value="Enviar" onclick="recomendacao()">
     </form>
+    <div id="resultado"></div>
     </main>
 </body>
 </html>
