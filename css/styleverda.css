@@ -388,116 +388,94 @@ main.bene section.principais-b ol li p {
 /*|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
                   PAGINA BETS E APOSTAS---ELIAS
 |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
-
-main.bet section.vicio {
+main.bet section.jogo {
   display: flex;
+  padding: 5vw 5vw 0vw 5vw;
 }
-
-main.bet section.vicio h1 {
-  font-size: 400%;
-  font-weight: bold;
-  margin: 8vw 0 0 9vw;
-}
-
-main.bet section.vicio h1 b {
-  color: #ed6868;
-}
-main.bet section.vicio h1 strong {
-  color: #ed6868;
-  border-bottom: 1px solid black;
-}
-
-main.bet section.vicio div.img {
-  margin: 5vw 0 0 15vw;
-}
-
-main.bet section.vicio p.p1 {
-  font-size: 200%;
+main.bet section.jogo div h1{
+  font-size: 3.4vw;
   font-weight: bolder;
-  margin: 8vw 0 0 9vw;
+  margin: 0 0 3vw 0;
 }
-
-main.bet section.vicio p.p2 {
+main.bet section.jogo div h1 span{
+  color: #ED6868;
+}
+main.bet section.jogo div h2{
+  font-size: 2vw;
+  font-weight: bolder;
+  margin: 0 0 2vw 0;
+  padding: 0 0 1vw 0;
   border-bottom: 1px solid black;
-  margin: 1vw 0 2vw 4vw;
-  padding: 1vw;
 }
-
-main.bet section.vicio ul {
-  margin: 2vw 0 3vw 9vw;
+main.bet section.jogo div p{
+  font-size: 1.5vw;
+  font-weight: bolder;
+  margin: 0 0 1vw 0;
 }
-
-/*||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
-                  PAGINA BETS E APOSTAS / SAÚDE
-||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
-
-main.bet section.saude {
+main.bet section.jogo div p span{
+  color: #ED6868;
+}
+main.bet section.jogo div ul li{
+  font-weight: 3vw;
+  margin: 0 0 0.5vw 0;
+}
+main.bet section.jogo div img{
+  margin: 0 0 0 5vw;
+}
+main.bet section.jogo div iframe{
+  margin: 0vw 0vw 0vw 12vw ;
+}
+main.bet section.saude{
   display: flex;
-  border-radius: 5vw;
-  background-color: #b7eaff;
-  box-shadow: 0px 0px 5px 5px #b7eaff;
-  padding: 10px 7px 10px 7px;
-  margin: 0 4vw 0;
+  padding: 3vw 3vw 3vw 3vw;
+  background-color: #F27D7D;
+  border-radius: 2vw;
+  margin: 5vw 5vw 5vw 5vw;
+}
+main.bet section.saude div h1{
+  font-size: 3vw;
+  font-weight: bolder;
+  margin: 0 0 2vw 0;
+}
+main.bet section.saude div h2{
+  color: white;
+  font-weight: bolder;
+  font-size: 2vw;
+  margin: 0 0 1vw 0;
+}
+main.bet section.saude div ul li{
+  font-size: 1.2vw;
+  font-weight: 500;
+  margin: 0 0 0.5vw 0;
+}
+main.bet section.saude div img{
+  margin: 0 0 0 18vw;
+}
+main.bet section.caixa{
+  text-align: center;
+  background-color: #80CAE8;
+  margin: 5vw 5vw 5vw 5vw;
+  padding: 3vw 10vw 3vw 10vw;
+  border-radius: 2vw;
+}
+main.bet section.caixa h1{
+  font-weight: bolder;
+  font-size: 2vw;
+  color: white;
+  margin: 0 0 3vw 0;
+}
+main.bet section.caixa h1 span{
+  color: black;
+}
+main.bet section.caixa ul li span{
+  font-weight: bolder;
+  font-size: 1.2vw;
+}
+main.bet section.caixa ul li {
+  margin: 0 0 2vw 0;
+  font-size: 1vw;
 }
 
-main.bet section.saude h1 {
-  font-size: 300%;
-  font-weight: bold;
-  margin: 2vw 0 3vw 6vw;
-}
-main.bet section.saude p {
-  margin: 2vw 0 0vw 6vw;
-  color: #ed6868;
-  font-size: 185%;
-  font-weight: bold;
-}
-main.bet section.saude ul p.p4 {
-  margin: 2vw 0 2vw 0vw;
-  color: #ed6868;
-  font-size: 185%;
-  font-weight: bold;
-}
-main.bet section.saude ul {
-  margin: 2vw 0 3vw 6vw;
-}
-main.bet section.saude img {
-  margin: 3vw 0 0 24vw;
-}
-
-main.bet {
-  section.caixa {
-    text-align: center;
-    h2 {
-      font-size: 2rem;
-      margin: 3vw 0 3vw 0;
-    }
-    span.negrito {
-      font-weight: bold;
-    }
-    span.vermelho {
-      color: red;
-      font-weight: 700;
-      border-bottom: 1px solid black;
-    }
-    ul {
-      li {
-        p {
-          font-size: 1.4rem;
-          margin: 0 0 1.7vw 0;
-        }
-      }
-    }
-    margin: 0 0 6vw 0;
-  }
-}
-
-main.bet section.caixa h2 {
-  font-size: 2rem;
-}
-
-main.bet section.vicio div ul li {
-  margin: 8px;
-}
 
 /*|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
                     ESTUDAR-COM-TELAS
