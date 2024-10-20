@@ -474,6 +474,10 @@ main.bet section.caixa ul li {
   margin: 0 0 2vw 0;
   font-size: 1vw;
 }
+main.bet section.caixa p a{
+  text-decoration: underline;
+  color: #3483bb;
+}
 
 
 /*|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
