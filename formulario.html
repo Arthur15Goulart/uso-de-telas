@@ -5,6 +5,7 @@
     <meta id="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário de recomendações</title>
     <script src="forms.js"></script>
+    <link rel="stylesheet" href="css/styleverda.css">
 </head>
 <body>
     <header>
@@ -15,7 +16,7 @@
             </div>
             <ul>
                 <li  class="inicio">
-                    <a href="index.html"><span>INÍCIO</span></a>
+                    <a href="index.html">INÍCIO</a>
                 </li>
                 <li  class="inicio">
                     <a href="bet.html">APOSTAS DIGITAIS</a>
@@ -27,49 +28,92 @@
                     <a href="estudar-com-telas.html">ESTUDAR COM AS TELAS</a>
                 </li>
                 <li  class="inicio">
-                    <a href="formulario.html">FORMULÁRIO</a>
+                    <a href="formulario.html"><span>FORMULÁRIO</span></a>
                 </li>
             </ul>
         </nav>
     </header>
     <main>
-        <form action="#" method="get">
+        <section class="forms">
         <h1>Responda as seguintes perguntas:</h1>
-        <label for="horas">Quantas horas em média você usa as telas diariamente? <input type="number" id="horas" id="horas"></label>
+        <form action="#" method="get">
+        <label for="horas">Quantas horas em média você usa as telas diariamente? <br> <input type="number" id="horas" id="horas" placeholder="Coloque Aqui."></label>
         <fieldset>
             <legend>Para quais atividades você mais utiliza as telas?</legend>
             <label>
-                <input type="radio" id="atvs" value="0">Estudos
+                <input type="radio" id="atvs" name="atvs" value="0">Estudos
             </label>
             <label>
-                <input type="radio" id="atvs" value="1">Trabalho
+                <input type="radio" id="atvs" name="atvs" value="1">Trabalho
             </label>
             <label>
-                <input type="radio" id="atvs" value="2">Outros (redes sociais, jogos, outros, etc.)
+                <input type="radio" id="atvs" name="atvs" value="2">Outros (redes sociais, jogos, outros, etc.)
             </label>
         </fieldset>
         <fieldset>
             <legend>Você utiliza alguma proteção ocular? (óculos, filtro de luz azul, etc)</legend>
             <label>
-                <input type="radio" id="protecao" value="0">Sim
+                <input type="radio" id="protecao" name="protecao" value="0">Sim
             </label>
             <label>
-                <input type="radio" id="protecao" value="1">Não
+                <input type="radio" id="protecao" name="protecao" value="1">Não
             </label>
         </fieldset>
         <fieldset>
             <legend>O uso das telas atrapalha suas atividades diárias?</legend>
             <label>
-                <input type="radio" id="atrapalha" value="0">Sim
+                <input type="radio" id="atrapalha" name="atrapalha" value="0">Sim
             </label>
             <label>
-                <input type="radio" id="atrapalha" value="1">Não
+                <input type="radio" id="atrapalha" name="atrapalha" value="1">Não
             </label>
         </fieldset>
         <h2>Ver recomendações:</h2>
-        <input type="button" value="Enviar" onclick="recomendacao()">
+        <input type="button" value="ENVIAR" onclick="recomendacao()">
     </form>
     <div id="resultado"></div>
+    </section>
+    <section class="referencias">
+    <p>Textos adaptados de:</p>
+    <ul>
+        <li><a href="https://www.cnnbrasil.com.br/saude/conheca-12-maneiras-de-diminuir-o-tempo-de-uso-do-celular/"> - Conheça 12 maneiras de diminuir o tempo de uso do celular</a></li>
+        <li><a href="https://www.qustodio.com/pt-br/blog/tips-to-balance-screen-time-and-learning/"> - 5 dicas para ajudar a equilibrar o tempo de tela e o aprendizado</a></li>
+        <li><a href="https://www.estadao.com.br/emais/bem-estar/como-evitar-problemas-de-visao-trabalhando-em-frente-as-telas/"> - Como evitar problemas de visão trabalhando em frente às telas</a></li>
+        <li><a href="https://prodest.es.gov.br/descubra-alternativas-para-combater-o-uso-excessivo-do-smartphone"> - Descubra alternativas para combater o uso excessivo do smartphon</a></li>
+        <li><a href="https://www.techtudo.com.br/listas/2023/06/tem-vicio-em-celular-veja-7-dicas-para-nao-ficar-refem-do-smartphone-edmobile.ghtml"> - Tem 'vício' em celular? Veja 7 dicas para não ficar refém do smartphone</a></li>
+    </ul>
+    </section>
     </main>
+    <footer>
+        <h1>
+            Desenvolvedores
+        </h1>
+        <ul>
+            <li class="desenvolvedores">
+                <a href="https://github.com/Arthur15Goulart">Arthur Goulart Teixeira Fábio</a>
+            </li>
+            <li  class="desenvolvedores">
+                <a href="https://github.com/carloshenriqueok">Carlos Henrique Pereira Santos</a>
+            </li>
+            <li  class="desenvolvedores">
+                <a href="https://github.com/Eliaskmi">Elias Davi de Souza</a>
+            </li>
+            <li  class="desenvolvedores">
+                <a href="https://github.com/jotakk">João Gabriel Menezes de Oliveira Mota</a>
+            </li>
+            <li  class="desenvolvedores">
+                <a href="https://github.com/RaulStenger">Raul Stenger</a>
+            </li>
+            <li  class="desenvolvedores">
+                <a href="https://github.com/rodolphorocha">Rodolpho da Silva Rocha</a>
+            </li>
+            <li  class="desenvolvedores">
+                <a href="https://github.com/doginvi">Victor de Sousa</a>
+            </li>
+        </ul>
+        <p>
+            <a href="https://github.com/Arthur15Goulart/uso-de-telas.git"><span class="fa-brands fa-github"></span></a>
+        </p>
+    </footer>
 </body>
 </html>
