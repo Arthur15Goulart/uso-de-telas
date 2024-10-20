@@ -546,153 +546,100 @@ main.estudartelas section.estudo-parte2 div.topicos ul li {
 /*||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| 
                     FORMULÁRIO 
 |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
-section.formulario {
-  margin: 2vw 0 0 0;
-  padding: 2vw;
-  background-color: #f3f6fa;
-  border-radius: 15px;
-  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
-}
-
-section.formulario h1 {
+section.forms{
   text-align: center;
-  font-size: 1.8rem;
-  font-weight: bold;
-  color: #2c3e50;
-  margin-bottom: 1.5vw;
-}
-
-section.formulario h1 span.digital {
-  color: #3895f9;
-  font-weight: bold;
-}
-
-section.formulario form {
+  margin: 3vw 2vw 3vw 2vw;
+  h1{
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0 0 2.5vw 0;
+  }
+  form{
+    font-size: 1.15rem;
+   input#horas{
+    border: none;
+    background-color: #eee;
+    width: 200px;
+    padding: 10px;
+    outline: none;
+    margin: 1vw 0 0 0;
+    color: black;
+   }
+   input#horas:focus{
+    box-shadow: 0px 0px 4px #000000;
+   }
+   fieldset{
+    border: 1px solid black;
+    background-color: #D2E4F5;
+    padding: 1vw 2vw 1vw 2vw;
+    margin: 2vw 1vw 2vw 1vw;
+    label{
+      input{
+        margin: 2vw 0.5vw 2vw 0.5vw;
+      }
+    }
+    legend{
+      font-weight: 600;
+    }
+   }
+   }
+   h2{
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin: 0 0 1vw 0;
+   }
+   input{
+    background-color: #056d97;
+    border: none;
+    color: white;
+    font-weight: bold;
+    padding: 0.7vw 2.5vw 0.7vw 2.5vw;
+    font-size: 1.3rem;
+    border-radius: 10px;
+    transition: background-color 0.5s;
+   }
+   input:hover {
+    background-color: #477d92ce;
+  }
+  div#resultado{
+    margin: 0 2vw 0 2vw;
+    p{
+      font-size: 1.2rem;
+      margin: 1.5vw 1vw 1.5vw 1vw;
+      strong{
+        font-weight: bold;
+      }
+    }
+    ul{
+      li{
+        strong{
+          font-weight: bold;
+        }
+        font-size: 1.3rem;
+        margin: 1vw 0 1vw 0;
+        p{
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+ }
+ section.referencias{
   text-align: center;
-  margin-top: 1vw;
-}
-
-section.formulario fieldset {
-  margin: 1vw 2vw;
-  border: 2px solid #2c3e50;
-  border-radius: 10px;
-  padding: 1.5vw;
-  background-color: #e9eff6;
-}
-
-
-section.formulario legend {
-  font-size: 1.1rem;
-  font-weight: bold;
-  padding-bottom: 1vw;
-  color: #2c3e50;
-}
-
-section.formulario p {
-  font-size: 1rem;
-  margin-bottom: 1vw;
-  color: #34495e;
-}
-
-section.formulario p.ultimo {
-  padding-bottom: 1vw;
-}
-
-section.formulario input.botao {
-  border: none;
-  background-color: #3483bb;
-  font-size: 1.2rem;
-  padding: 0.8vw 2vw;
-  color: white;
-  font-weight: bold;
-  border-radius: 30px;
-  cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
-section.formulario input.botao:hover {
-  background-color: #286a99;
-  transform: scale(1.05);
-}
-
-/* Respostas */
-section.formulario div.respostas {
-  text-align: center;
-  background-color: #3895f9;
-  margin: 2vw 2vw;
-  padding: 2vw;
-  border-radius: 30px;
-  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.288);
-}
-
-section.formulario div.respostas h2 {
-  font-size: 1.6rem;
-  color: white;
-  font-weight: bold;
-  margin-bottom: 1vw;
-}
-
-section.formulario div.respostas p {
-  font-size: 1rem;
-  color: wheat;
-  font-style: italic;
-  margin: 0.5vw 0 2vw;
-}
-
-section.formulario div.res2 p,
-section.formulario div.res3 p,
-section.formulario div.res4 p,
-section.formulario div.res5 p {
-  font-size: 1.2rem;
-  color: white;
-  margin-bottom: 0.7vw;
-}
-
-section.formulario div.res2 ul,
-section.formulario div.res4 ul,
-section.formulario div.res5 ul {
-  color: white;
-  font-size: 1.2rem;
-  margin-bottom: 0.7vw;
-}
-
-/* Rotina */
-section.formulario div.rotina {
-  padding-bottom: 2vw;
-  margin-top: 1vw;
-}
-
-section.formulario div.rotina h3 {
-  font-size: 1.4rem;
-  color: white;
-  margin-bottom: 1vw;
-}
-
-section.formulario ul.periodos {
-  display: flex;
-  justify-content: space-between;
-  padding: 1vw 2vw;
-  background-color: #0d5386;
-  border-radius: 30px;
-  margin: 0 2vw;
-}
-
-section.formulario ul.periodos li {
-  list-style: none;
-  text-align: center;
-}
-
-section.formulario ul.periodos li span {
-  font-size: 1.2rem;
-  color: white;
-  font-weight: bold;
-}
-
-section.formulario ul.periodos li ul li {
-  font-size: 1rem;
-  color: white;
-  margin-top: 0.5vw;
-}
+  p{
+    font-size: 1.2rem;
+  }
+    ul{
+      li{
+        margin: 1vw 0 1vw 0;
+        a{
+          text-decoration: underline;
+          color: #49adf4;
+        }
+      }
+    }
+  
+ }
 
 /*|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
                     RODAPÉ
