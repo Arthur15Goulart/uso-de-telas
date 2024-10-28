@@ -56,7 +56,7 @@ function recomendacao() {
     if (prt) {
         const protecao = prt.value
         if (protecao === "0") {
-            res.innerHTML += `<p>Você já utiliza proteção ocular. Caso queira saber mais <a href="#https://hopr.com.br/uso-prolongado-de-telas-como-cuidar-da-saude-dos-seus-olhos/#:~:text=Postura%20e%20dist%C3%A2ncia%20adequadas%3A%20mantenha,adequada%2C%20evitando%20reflexos%20na%20tela.">Acesse Aqui!</a></p>`
+            res.innerHTML += `<p>Você já utiliza proteção ocular. Caso queira saber mais <a href="https://hopr.com.br/uso-prolongado-de-telas-como-cuidar-da-saude-dos-seus-olhos/.">Acesse Aqui!</a></p>`
         }
     
             else if(protecao === "1"){

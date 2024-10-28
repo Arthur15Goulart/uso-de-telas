@@ -612,6 +612,10 @@ section.forms{
       strong{
         font-weight: bold;
       }
+      a{
+        text-decoration: underline;
+        color: #49adf4;
+      }
     }
     ul{
       li{
