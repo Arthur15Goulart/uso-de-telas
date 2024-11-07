@@ -1,9 +1,16 @@
 function recomendacao() {
     const hrs = document.querySelector('input#horas');
     const res = document.querySelector('div#resultado');
+    if(hrs){
     const horas = Number(hrs.value);
+    if(horas > 0 && horas <= 4){
     res.innerHTML = `<p>Você utiliza as telas em média <strong>${horas} HORAS</strong> por dia.</p>`;
-
+        } else if(horas >= 5 && horas <= 14 ){
+            res.innerHTML = `<p>Cuidado! a sua média diária de uso de telas é de <strong>${horas} HORAS</strong>, é considerado muito tempo.</p>`
+        } else if(horas <= 0 || horas > 14){
+            res.innerHTML = `<p><strong>A quantidade de horas é inválida<strong></p>`; return;
+        }
+    }
     const atvds = document.querySelector('input[name="atvs"]:checked');
     if (atvds) {
         const atividades = atvds.value;
